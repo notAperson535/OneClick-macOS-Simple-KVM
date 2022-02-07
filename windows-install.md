@@ -4,7 +4,7 @@
 - 8GB of RAM or more
 
 ## Step 1 (Installing WSL2)
-Install WSL2. If you have WSL2 already, you can skip this
+Install WSL2. If you have WSL2 already, you can skip this step
 Open Powershell as an administrator and run this command
 ```
 wsl --install
