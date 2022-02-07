@@ -4,12 +4,14 @@
 - 8GB of RAM or more
 
 ## Step 1 (Installing WSL2)
-Install WSL2. If you have WSL2 already, you can skip this step
+Install WSL2. If you have WSL2 already, you can skip this step.
 Open Powershell as an administrator and run this command
 ```
 wsl --install
 ```
 It will prompt a reboot, reboot and let it install Ubuntu. One that is done, make a username and password. It does not have to be the same as the system.
+
+If you do not see the window for Ubuntu
 
 ## Step 2 (Getting the files)
 Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with the your Windows username, not the Linux one.
