@@ -23,7 +23,7 @@ git pull --rebase
 ## OneClick Method
 - `setup.sh` is for Debian based Linux Repositories like Ubuntu
 - `setupArch.sh` is for Arch based Linux Repositories like Manjaro.
-- `setupfedora.sh` is for Fedora based Linux Repositories. (doesn't work yet)
+- `setupFedora.sh` is for Fedora based Linux Repositories.
 
 Run `./setup.sh` or the correct one depending on your Linux OS to make the VM. Monterey may not work, as it is very picky about hardware.
 Once the VM boots up, just hit enter even if it's a black screen or a cut off image (do this every boot) Then format the biggest drive as macOS Extended Journaled (should be a little bigger than 64GB, then go to reinstall macOS and install it to the newly formatted drive.
