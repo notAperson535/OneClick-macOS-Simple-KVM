@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env/bash
 
 
 OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
-VMDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )
+VMDIR=$(realpath $(dirname $0))
 OVMF=$VMDIR/firmware
 #export QEMU_AUDIO_DRV=pa
 #QEMU_AUDIO_DRV=pa
