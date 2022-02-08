@@ -1,4 +1,4 @@
-#!/usr/bin/env/bash
+#!/usr/bin/env bash
 
 
 OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
