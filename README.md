@@ -50,7 +50,7 @@ sudo xbps-install -Su qemu python3 python3-pip  # for Void Linux.
 sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for openSUSE Tumbleweed
 sudo dnf install qemu qemu-img python3 python3-pip # for Fedora
 sudo eopkg install qemu # for Solus OS
-sudo emerge -a qemu python:3.8 dev-python/pip # for Gentoo
+sudo emerge -a qemu python dev-python/pip # for Gentoo
 ```
 
 If you are installing on Solus OS, extracting qemu may take a while, so be patient.
