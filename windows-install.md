@@ -1,5 +1,5 @@
 ## Prerequisites:
-- Windows 11 or any version of Windows that supports Linux GUI Apps. I don't know if Windows 10 does or not.
+- Windows 10 or Higher
 - Virtualization capabilities
 - 8GB of RAM or more
 
@@ -61,7 +61,9 @@ cd /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 And run `./setup.sh` to finish the setup and run the macOS VM!
 
-Whenever you want to load up the machine again, run `sudo ./basic.sh` NOT `./setup.sh` as setup.sh will reset all of your progress, and you will have to reinstall macOS.
+If you are using Windows 10, once setup.sh finsishes and you see lots of text related to QEMU, press ctrl+c and run `sudo ./headless.sh` instead of `sudo ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+
+Whenever you want to load up the machine again, run `sudo ./basic.sh` or `./headless.sh` NOT `./setup.sh`.
 
 ## You're done!
 
@@ -75,7 +77,13 @@ To fine-tune the system and improve performance, look in the `docs` folder for m
 
 ### Terminal Doesn't Respond
 
-If the terminal stops responding when you run `sudo ./basic.sh`, then follow these steps
+If the terminal stops responding when you run `sudo ./basic.sh`, you have two options, Windows 10 users can only use the first option
+
+#### Option 1
+
+Run `sudo ./headless.sh` instead of `sudo ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+
+#### Option 2
 
 Uninstall Ubuntu by going to the app in settings and selecting uninstall. Once that is done, go to the Microsoft Store, search Ubuntu, and install it. Once the installation is done, open it, make a new username and password, and repeat the steps in Step 3, but instead of running `./setup.sh` run `sudo ./basic.sh`
 
