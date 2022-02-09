@@ -2,7 +2,7 @@
 
 sudo dnf install qemu qemu-img python3 python3-pip
 
-qemu-img create -f qcow2 macOS.qcow2 64G
+(ls macOS.qcow2 >> /dev/null 2>&1 && echo "") || qemu-img create -f qcow2 macOS.qcow2 64G
 
 ./fetch-macOS-v2.py
 
