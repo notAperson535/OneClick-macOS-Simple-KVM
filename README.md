@@ -34,7 +34,7 @@ Once installed, run `./basic.sh` to boot up the VM again. Do not run `./setup.sh
 
 If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around
 
-If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages. IF you get an error that looks like: 
+If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages. If you get an error that looks like: 
 ```
 Requested operation is not valid: Setting different SELinux label on /opt/dir/OneClick-macOS-Simple-KVM/firmware/OVMF_VARS-1024x768.fd which is already in use
 ```
@@ -112,7 +112,7 @@ HEADLESS=1 MEM=1G CPUS=2 SYSTEM_DISK=MyDisk.qcow2 ./headless.sh
 
 If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around
 
-If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages. IF you get an error that looks like: 
+If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages. If you get an error that looks like: 
 ```
 Requested operation is not valid: Setting different SELinux label on /opt/dir/OneClick-macOS-Simple-KVM/firmware/OVMF_VARS-1024x768.fd which is already in use
 ```
