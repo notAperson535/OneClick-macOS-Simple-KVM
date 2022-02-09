@@ -61,9 +61,9 @@ cd /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 And run `./setup.sh` to finish the setup and run the macOS VM!
 
-If you are using Windows 10, once setup.sh finsishes and you see lots of text related to QEMU, press ctrl+c and run `sudo ./headless.sh` instead of `sudo ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+If you are using Windows 10, once setup.sh finsishes , press ctrl+c and run `sudo ./headless.sh` instead of `sudo ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
 
-Whenever you want to load up the machine again, run `sudo ./basic.sh` or `./headless.sh` NOT `./setup.sh`.
+Whenever you want to load up the machine again, run `sudo ./basic.sh` or `./headless.sh`, depending on your usage, NOT `./setup.sh`.
 
 ## You're done!
 
@@ -77,7 +77,7 @@ To fine-tune the system and improve performance, look in the `docs` folder for m
 
 ### Terminal Doesn't Respond
 
-If the terminal stops responding when you run `sudo ./basic.sh`, you have two options, Windows 10 users can only use the first option
+If the terminal stops responding when you run `sudo ./basic.sh`, you have two options, but Windows 10 users can only use the first option
 
 #### Option 1
 
