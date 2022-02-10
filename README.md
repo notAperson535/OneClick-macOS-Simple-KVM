@@ -79,7 +79,7 @@ qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
 ```
 If it is named BaseSystem.img, you are good to go
 
-Hint (If you want to use an older version of macOS, OpenCore can go back to macOS 10.4)
+Hint (If you want to use an older version of macOS, OpenCore can go back to macOS 10.4), but for macOS versions less than 10.11 (El Capitan), you must use legacy.sh.
 
 ## Step 2
 Create an empty hard disk using `qemu-img`, changing the name and size to preference:
