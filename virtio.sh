@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
 VMDIR=$PWD
@@ -9,7 +9,7 @@ OVMF=$VMDIR/firmware
 qemu-system-x86_64 \
     -nodefaults \
     -enable-kvm \
-    -m 2G \
+    -m 4G \
     -machine q35,accel=kvm \
     -smp 4,cores=2 \
     -cpu Penryn,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc \
