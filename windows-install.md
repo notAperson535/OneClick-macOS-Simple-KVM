@@ -61,33 +61,17 @@ cd /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 And run `./setup.sh` to finish the setup and run the macOS VM!
 
-If you are using Windows 10, once setup.sh finsishes , press ctrl+c and run `sudo ./headless.sh` instead of `sudo ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+Once setup.sh finsishes , press ctrl+c and run `sudo ./headless.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
 
-Whenever you want to load up the machine again, run `sudo ./basic.sh` or `./headless.sh`, depending on your usage, NOT `./setup.sh`.
+Whenever you want to load up the machine again, run `./headless.sh`, NOT `./setup.sh`.
 
 ## You're done!
-
-If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around
 
 Never close the terminal when the QEMU window is open
 
 To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](docs/guide-performance.md), setting up [bridged networking](docs/guide-networking.md)(probably does not work and is not needed), adding [passthrough hardware (for GPUs)](docs/guide-passthrough.md)(this doesn't work on WSL2 yet), tweaking [screen resolution](docs/guide-screen-resolution.md), and enabling sound features.
 
 ## Troubleshooting
-
-### Terminal Doesn't Respond
-
-If the terminal stops responding when you run `sudo ./basic.sh`, you have two options, but Windows 10 users can only use the first option
-
-#### Option 1
-
-Run `sudo ./headless.sh` instead of `sudo ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
-
-#### Option 2
-
-Uninstall Ubuntu by going to the app in settings and selecting uninstall. Once that is done, go to the Microsoft Store, search Ubuntu, and install it. Once the installation is done, open it, make a new username and password, and repeat the steps in Step 3, but instead of running `./setup.sh` run `sudo ./basic.sh`
-
-Do this every time this happens
 
 ### cat /sys/module/kvm_intel/parameters/nested returns `N`, but KVM-OK Returns `KVM acceleration can be used`
 
