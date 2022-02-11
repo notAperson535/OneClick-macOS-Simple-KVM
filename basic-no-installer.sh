@@ -25,7 +25,5 @@ qemu-system-x86_64 \
     -device ich9-ahci,id=sata \
     -drive id=ESP,if=none,format=qcow2,file="$VMDIR/ESP.qcow2" \
     -device ide-hd,bus=sata.2,drive=ESP \
-    -drive id=InstallMedia,format=raw,if=none,file="$VMDIR/BaseSystem.img" \
-    -device ide-hd,bus=sata.3,drive=InstallMedia \
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
     -device ide-hd,bus=sata.4,drive=SystemDisk \
