@@ -29,7 +29,7 @@ git pull --rebase
 Run `./setup.sh` or the correct one depending on your Linux OS to make the VM. Monterey may not work, as it is very picky about hardware.
 Once the VM boots up, just hit enter even if it's a black screen or a cut off image (do this every boot) Then format the biggest drive as macOS Extended Journaled (should be a little bigger than 64GB, then go to reinstall macOS and install it to the newly formatted drive.
 
-Once installed, run `./basic.sh` to boot up the VM again. Do not run `./setup.sh` twice if the install was succesful, as it will redownload the image and that is not needed.
+Once installed, run `./basic.sh` to boot up the VM again. Once macOS is succesfully installed, you can instead run `./basic-no-installer.sh` to boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer. Do not run the setup file twice if the install was succesful, as it will redownload the image and that is not needed.
 
 ## You're done!
 
@@ -93,7 +93,7 @@ if you change the drive name, change the line below according to the new name in
 ```
 > Note: If you're running on a headless system (such as on Cloud providers), you will need `-nographic` and `-vnc :0 -k en-us` to the end of basic.sh for VNC support.
 
-Then run `basic.sh` to start the machine and install macOS. Remember to partition in Disk Utility first! (macOS extended journaled)
+Then run `basic.sh` to start the machine and install macOS. Remember to partition in Disk Utility first! (macOS extended journaled) Once macOS is succesfully installed, you can instead run `./basic-no-installer.sh` to boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer.
 
 If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-mouse \` to `-usb -device usb-kbd -device usb-tablet \`
 
