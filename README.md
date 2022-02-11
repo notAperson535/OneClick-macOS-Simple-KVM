@@ -15,7 +15,7 @@ Do not use forks of `notAperson535/OneClick-macOS-Simple-KVM` as I update this r
 This is NOT the install guide for Windows, that is located [here](windows-install.md)
 Don't use the Just-OpenCore branch of this, it is not updated ever.
 
-If you want to update your version, which I recommend doing at least one a month, run this command
+If you do not see files in this guide, or if you want to update your version, which I recommend doing at least one a month, run this command
 ```
 git pull --rebase
 ```
