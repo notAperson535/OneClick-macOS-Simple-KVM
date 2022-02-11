@@ -9,6 +9,22 @@ I did not make the download script, Kholia did.
 
 New to macOS and KVM? Check [the FAQs.](docs/FAQs.md)
 
+## Migrating (Coming from other repositories)
+
+If you are coming from another repository, and want to come here, here is what you need to do
+
+### Coming from macOS-Simple-KVM
+
+If you are coming from macOS-Simple-KVM, maybe to upgrade to Big Sur or Monterey, it will be very easy. All you have to do is place the BaseSystem file and the file that has macOS installed into the OneClick-macOS-Simple-KVM folder. Then rename the file that has macOS installed (usually MyDisk.qcow2) to macOS.qcow2. Then run `basic.sh` or `basic-no-installer.sh` and enjoy.
+
+### Coming from OSX-KVM
+
+If you want to come from OSX-KVM, maybe for stability, it will be a little harder and take a little longer. First, place the BaseSystem file and the file that has macOS installed into the OneClick-macOS-Simple-KVM folder. Then, rename the file that has macOS installed (usually mac_hdd_ng.img) to macOS.img. Then run this command.
+```
+qemu-img convert -f qcow2 -O qcow2 macOS.img macOS.qcow2
+```
+Once that has completed, delete the macOS.img file. Then run `basic.sh` or `basic-no-installer.sh` and enjoy.
+
 ## IMPORTANT
 You must download or clone this GitHub repository before you begin
 Do not use forks of `notAperson535/OneClick-macOS-Simple-KVM` as I update this repository a lot, and forks are usually behind.
@@ -29,11 +45,11 @@ git pull --rebase
 Run `./setup.sh` or the correct one depending on your Linux OS to make the VM. Monterey may not work, as it is very picky about hardware.
 Once the VM boots up, just hit enter even if it's a black screen or a cut off image (do this every boot) Then format the biggest drive as macOS Extended Journaled (should be a little bigger than 64GB, then go to reinstall macOS and install it to the newly formatted drive.
 
-Once installed, run `./basic.sh` to boot up the VM again. Once macOS is succesfully installed, you can instead run `./basic-no-installer.sh` to boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer. Do not run the setup file twice if the install was succesful, as it will redownload the image and that is not needed.
+Once installed, run `./basic.sh` to boot up the VM again. Don't worry, if the macOS setup screen is laggy and slow, it is not how fast the VM will be. I don't know why it's so laggy, but once it is finished, the VM should be much faster. Once macOS is succesfully installed, you can instead run `./basic-no-installer.sh` to boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer. Do not run the setup file twice if the install was succesful, as it will redownload the image and that is not needed.
 
 ## You're done!
 
-If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around
+If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around.
 
 If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages. If you get an error that looks like: 
 ```
@@ -111,7 +127,7 @@ If you're using a cloud-based/headless system, you can use `headless.sh` to set 
 
 ## You're done!
 
-If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around
+If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around. Don't worry, if the macOS setup screen is laggy and slow, it is not how fast the VM will be. I don't know why it's so laggy, but once it is finished, the VM should be much faster.
 
 If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages. If you get an error that looks like: 
 ```
