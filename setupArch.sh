@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S qemu python python3-pip python-wheel
+sudo pacman -S qemu python python3-pip python-wheel -y
 
 (ls macOS.qcow2 >> /dev/null 2>&1 && echo "") || qemu-img create -f qcow2 macOS.qcow2 64G
 
