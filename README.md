@@ -72,6 +72,7 @@ sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for ope
 sudo dnf install qemu qemu-img python3 python3-pip # for Fedora
 sudo eopkg install qemu # for Solus OS
 sudo emerge -a qemu python dev-python/pip # for Gentoo
+To use in NIXOS add qemu, pyton3, and pip in your packages list.
 ```
 
 If you are installing on Solus OS, extracting qemu may take a while, so be patient.
