@@ -124,9 +124,9 @@ If you get an error that says access denied, run `sudo ./basic.sh` which will gi
 2. After running the above command, add `macOS.qcow2` as storage in the properties of the newly added entry for VM.
 
 ## Step 2b (Headless Systems)
-If you're using a cloud-based/headless system, you can use `headless.sh` to set up a quick VNC instance. VNC will start on port `5900` by default.
+If you're running on a headless system (such as on Cloud providers), set the HEADLESS environment variable to 1:
 ```
-./headless.sh
+HEADLESS=1 ./basic.sh
 ```
 
 ## You're done!
