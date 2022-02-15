@@ -1,3 +1,8 @@
+---
+title: OneClick-macOS-Simple-KVM
+permalink: /windows/
+--- 
+
 ## Prerequisites:
 - Windows 10 or Higher
 - Virtualization capabilities
