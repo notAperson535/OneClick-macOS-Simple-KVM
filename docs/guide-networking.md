@@ -1,3 +1,8 @@
+---
+title: Networking
+permalink: /networking/
+--- 
+
 Guide to Bridged Networking
 ===========================
 
