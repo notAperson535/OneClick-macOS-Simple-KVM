@@ -460,6 +460,12 @@ def main():
     # No action specified, so present a download menu instead
     # https://github.com/acidanthera/OpenCorePkg/blob/master/Utilities/macrecovery/boards.json
     products = [
+            {"name": "Lion (10.7)", "b": Mac-C3EC7CD22292981F "m": 00000000000F0HM00, "short": "lion"}
+            {"name": "Mountain Lion (10.8)", "b": Mac-7DF2A3B5E5D671ED "m": 00000000000F65100, "short": "mountain-lion"}
+            {"name": "Mavericks (10.9)", "b": Mac-F60DEB81FF30ACF6 "m": 00000000000FNN100, "short": "mavericks"}
+            {"name": "Yosemite (10.10)", "b": Mac-E43C1C25D4880AD6 "m": 00000000000GDVW00, "short": "yosemite"}
+            {"name": "El Capitan (10.11)", "b": Mac-FFE5EF870D7BA81A "m": 00000000000GQRX00, "short": "el-capitan"}
+            {"name": "Sierra (10.12)", "b": Mac-77F17D7DA9285301 "m": 00000000000J0DX00, "short": "sierra"}
             {"name": "High Sierra (10.13)", "b": "Mac-7BA5B2D9E42DDD94", "m": "00000000000J80300", "short": "high-sierra"},
             {"name": "Mojave (10.14)", "b": "Mac-7BA5B2DFE22DDD8C", "m": "00000000000KXPG00", "short": "mojave"},
             {"name": "Catalina (10.15)", "b": "Mac-00BE6ED71E35EB86", "m": "00000000000000000", "short": "catalina"},
