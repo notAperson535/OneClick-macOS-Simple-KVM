@@ -460,7 +460,7 @@ def main():
     # No action specified, so present a download menu instead
     # https://github.com/acidanthera/OpenCorePkg/blob/master/Utilities/macrecovery/boards.json
     products = [
-            {"name": "Lion (10.7)", "b": "Mac-C3EC7CD22292981F", "m": "00000000000F0HM00", "short": "lion"}
+            {"name": "Lion (10.7)", "b": "Mac-C3EC7CD22292981F", "m": "00000000000F0HM00", "short": "lion"},
             {"name": "Mountain Lion (10.8)", "b": "Mac-7DF2A3B5E5D671ED", "m": "00000000000F65100", "short": "mountain-lion"},
             {"name": "Mavericks (10.9)", "b": "Mac-F60DEB81FF30ACF6", "m": "00000000000FNN100", "short": "mavericks"},
             {"name": "Yosemite (10.10)", "b": "Mac-E43C1C25D4880AD6", "m": "00000000000GDVW00", "short": "yosemite"},
