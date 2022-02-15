@@ -1,10 +1,7 @@
 ---
-title: OneClick-macOS-Simple-KVM
+title: Migrating (Coming from other Repositories)
 permalink: /migrating/
 --- 
-
-
-## Migrating (Coming from other repositories)
 
 If you are coming from another repository, and want to come here, here is what you need to do
 
