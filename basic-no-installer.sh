@@ -7,6 +7,12 @@ OVMF=$VMDIR/firmware
 #export QEMU_AUDIO_DRV=pa
 #QEMU_AUDIO_DRV=pa
 
+MOREARGS=()
+
+[[ "$HEADLESS" = "1" ]] && {
+    MOREARGS+=(-nographic -vnc :0 -k en-us)
+}
+
 qemu-system-x86_64 \
     -enable-kvm \
     -m 4G \
@@ -27,3 +33,4 @@ qemu-system-x86_64 \
     -device ide-hd,bus=sata.2,drive=ESP \
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
     -device ide-hd,bus=sata.4,drive=SystemDisk \
+    "${MOREARGS[@]}"
