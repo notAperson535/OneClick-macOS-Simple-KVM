@@ -1,3 +1,8 @@
+---
+title: Screen Resolution
+permalink: /resolution/
+--- 
+
 ## How to increase screen resolution for macOS-Simple-KVM
 
 1. In the macOS Finder, look for **EFI** in the left bar under **Volumes**. If it isn't visible you will have to mount it:
