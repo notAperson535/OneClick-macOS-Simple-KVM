@@ -1,4 +1,4 @@
-# macOS-Simple-KVM
+# OneClick-macOS-Simple-KVM
 Documentation to set up a simple macOS VM in QEMU, accelerated by KVM.
 
 By: notAperson
