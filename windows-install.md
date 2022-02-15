@@ -61,13 +61,13 @@ cd /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 And run `./setup.sh` to finish the setup and run the macOS VM!
 
-Once setup.sh finsishes , press ctrl+c and run `sudo ./headless.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+Once setup.sh finsishes , press ctrl+c and run `sudo HEADLESS=1 ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
 
-Whenever you want to load up the machine again, run `./headless.sh`, NOT `./setup.sh`.
+Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh`.
 
 ## You're done!
 
-Never close the terminal when the QEMU window is open
+Don't close the terminal when the QEMU window is open, as it will shut down the VM and may cause data loss.
 
 To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](docs/guide-performance.md), setting up [bridged networking](docs/guide-networking.md)(probably does not work and is not needed), adding [passthrough hardware (for GPUs)](docs/guide-passthrough.md)(this doesn't work on WSL2 yet), tweaking [screen resolution](docs/guide-screen-resolution.md), and enabling sound features.
 
@@ -75,7 +75,7 @@ To fine-tune the system and improve performance, look in the `docs` folder for m
 
 ### cat /sys/module/kvm_intel/parameters/nested returns `N`, but KVM-OK Returns `KVM acceleration can be used`
 
-Edit these commands in .wslconfig, which is located in your Windows user direcotry, replacing the WINDOWS_USER_NAME with the your Windows username, not the Linux one.
+Edit these commands in .wslconfig, which is located in your Windows user directory, replacing the WINDOWS_USER_NAME with the your Windows username, not the Linux one.
 ```
 nestedVirtualization=true
 kernel=C:\\Users\\WINDOWS_USER_NAME\\bzImage
