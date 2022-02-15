@@ -1,5 +1,7 @@
-Guide to Performance Tuning
-===========================
+---
+title: Guide to Performance Tuning
+permalink: /performance/
+--- 
 The default macOS VM configuration (`basic.sh`) assumes some sane defaults, however this may not reflect the actual topology or peformance capabilities of the underlaying machine.
 
 Here's some tunable parameters to get the most of out QEMU:
