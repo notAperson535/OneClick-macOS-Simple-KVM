@@ -1,3 +1,8 @@
+---
+title: FAQs
+permalink: /faq/
+--- 
+
 # FAQs
 
 ## Q: Does this work on any CPU?
