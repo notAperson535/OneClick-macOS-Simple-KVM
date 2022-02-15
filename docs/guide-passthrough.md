@@ -1,5 +1,7 @@
-Guide to PCIe Passthrough
-=========================
+---
+title: Guide to PCIe Passthrough
+permalink: /passthrough/
+--- 
 
 ## Enable BIOS features
 To use PCIe Passthrough, you will need a compatible motherboard and CPU with support for iommu. Look up your motherboard manual on how to enable these features, but they are commonly named `VT-d` or `AMD Vi`.
