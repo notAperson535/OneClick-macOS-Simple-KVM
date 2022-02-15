@@ -78,15 +78,18 @@ To use in NIXOS add qemu, pyton3, and pip in your packages list.
 If you are installing on Solus OS, extracting qemu may take a while, so be patient.
 
 ## Step 1
-Run `fetch-macOS.py` to download installation media for macOS (internet required).
+Run `fetch-macOS-v2.py` to download installation media for macOS (internet required).
 ```
 ./fetch-macOS-v2.py
 ```
-Then run
+If the resulting file is named BaseSystem.dmg then run 
 ```
 qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
 ```
-If BaseSystem.dmg is not found, check to make sure macOS downloaded correctly
+If it is named RecoveryImage.dmg run
+```
+qemu-img convert RecoveryImage.dmg -O raw BaseSystem.img
+```
 
 ## Bringing Your Own macOS bootable file
 If you want to bring your own bootable file, whether it be for an older version of macOS or you already have a file, drag it into the OneClick-macOS-Simple-KVM folder. Then, Check if it is named BaseSystem if it's not rename it to BaseSystem. Most likely it would be named named RecoveryImage.
