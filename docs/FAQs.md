@@ -3,8 +3,6 @@ title: FAQs
 permalink: /faq/
 --- 
 
-# FAQs
-
 ## Q: Does this work on any CPU?
 A: There is a minimum CPU requirement for macOS itself. Both Intel and AMD CPUs are supported, but the recommendations are Ivy Bridge (or later) Core and Xeon processors, or Ryzen and Threadripper processors.
 
