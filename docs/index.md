@@ -1,6 +1,5 @@
 ---
 title: OneClick-macOS-Simple-KVM
-subtitle: Tools to set up a easy, quick macOS VM in QEMU, accelerated by KVM.
 --- 
 
 # OneClick-macOS-Simple-KVM
@@ -17,7 +16,6 @@ New to macOS and KVM? Check [the FAQs.](docs/FAQs.md)
 ## IMPORTANT
 You must download or clone this GitHub repository before you begin
 Do not use forks of `notAperson535/OneClick-macOS-Simple-KVM` as I update this repository a lot, and forks are usually behind.
-This is NOT the install guide for Windows, that is located [here](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/windows/).
 Don't use the Just-OpenCore branch of this, it is not updated ever.
 
 If you do not see files in this guide, or if you want to update your version, which I recommend doing at least one a month, run this command
@@ -27,7 +25,7 @@ git pull --rebase
 
 ## Using This Repository
 
-You have two options for using this repository, the [manual method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/manual/) or the [OneClick method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/oneclick/)
+You have two options for using this repository, the [manual method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/manual/), the [OneClick method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/oneclick/), or [installing on Windows](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/windows/).
 
 ## Migrating (Coming from other repositories)
 
