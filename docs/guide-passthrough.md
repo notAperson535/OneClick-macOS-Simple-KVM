@@ -1,6 +1,6 @@
 ---
 title: Guide to PCIe Passthrough
-permalink: /passthrough/
+permalink: /docs/passthrough/
 --- 
 
 ## Enable BIOS features
