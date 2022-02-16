@@ -1,5 +1,5 @@
 ---
-title: Windows
+title: Installing on Windows
 permalink: /windows/
 --- 
 
