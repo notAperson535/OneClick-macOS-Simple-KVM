@@ -1,6 +1,6 @@
 ---
 title: Guide to Performance Tuning
-permalink: /performance/
+permalink: /docs/performance/
 --- 
 The default macOS VM configuration (`basic.sh`) assumes some sane defaults, however this may not reflect the actual topology or peformance capabilities of the underlaying machine.
 
