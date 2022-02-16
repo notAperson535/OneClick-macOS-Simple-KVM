@@ -74,7 +74,7 @@ Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`
 
 Don't close the terminal when the QEMU window is open, as it will shut down the VM and may cause data loss.
 
-To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/performance), setting up [bridged networking](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/networking), adding [passthrough hardware (for GPUs)](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/passthrough), tweaking [screen resolution](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/resolution), and [enabling sound features](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/passthrough).
+To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/performance), setting up [bridged networking](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/networking), adding [passthrough hardware (for GPUs)](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough), tweaking [screen resolution](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/resolution), and [enabling sound features](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough).
 
 ## Troubleshooting
 
