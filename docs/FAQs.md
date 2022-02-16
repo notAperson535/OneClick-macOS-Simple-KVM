@@ -1,6 +1,6 @@
 ---
 title: FAQs
-permalink: /faq/
+permalink: /docs/faqs/
 --- 
 
 ## Q: Does this work on any CPU?
