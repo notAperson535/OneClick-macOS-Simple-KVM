@@ -3,10 +3,10 @@ title: Docs Links
 permalink: /docs/
 --- 
 
-[Setting Up Bridged Netorking](OneClick-macOS-Simple-KVM/docs/networking)
+[Setting Up Bridged Netorking](/networking)
 
-[Increasing Memory and CPUs](OneClick-macOS-Simple-KVM/docs/performance)
+[Increasing Memory and CPUs](/performance)
 
-[Increasing Screen Resolution](OneClick-macOS-Simple-KVM/docs/resolution)
+[Increasing Screen Resolution](/resolution)
 
-[Passing through GPUs and Sound](OneClick-macOS-Simple-KVM/docs/)
+[Passing through GPUs and Sound](/docs/)
