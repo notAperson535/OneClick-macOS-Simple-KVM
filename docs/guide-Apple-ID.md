@@ -1,6 +1,5 @@
 ---
 title: Apple-ID fixing
-description: 
 permalink: /docs/apple-id/
 --- 
 
