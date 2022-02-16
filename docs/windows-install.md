@@ -1,5 +1,5 @@
 ---
-title: OneClick-macOS-Simple-KVM
+title: Windows
 permalink: /windows/
 --- 
 
