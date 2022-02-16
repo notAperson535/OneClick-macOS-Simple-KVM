@@ -9,4 +9,4 @@ permalink: /docs/
 
 [Increasing Screen Resolution](OneClick-macOS-Simple-KVM/docs/resolution)
 
-[Passing through GPUs and Sound]OneClick-macOS-Simple-KVM/docs/()
+[Passing through GPUs and Sound](OneClick-macOS-Simple-KVM/docs/)
