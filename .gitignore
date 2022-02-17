@@ -4,4 +4,4 @@ BaseSystem.dmg
 BaseSystem.chunklist
 macOS.qcow2
 basic.sh
-basic-no-install.sh
+basic-no-installer.sh
