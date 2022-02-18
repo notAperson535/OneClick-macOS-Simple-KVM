@@ -15,7 +15,7 @@ permalink: /docs/resolution/
 
 ```````````````````
 <key>Resolution</key>
-<string>1280x720@32</string>
+<string>1920x1080@32</string>
 ```````````````````
 
  - Edit that to your preferred screen resolution, but leave the @32 part as it is.
