@@ -25,7 +25,7 @@ git pull --rebase
 
 ## Using This Repository
 
-You have two options for using this repository, the [manual method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/manual/), the [OneClick method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/oneclick/), or [installing on Windows](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/windows/).
+You have three options for using this repository, the [manual method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/manual/), the [OneClick method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/oneclick/), or [installing on Windows](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/windows/).
 
 ## Migrating (Coming from other repositories)
 
