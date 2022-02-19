@@ -12,7 +12,7 @@ permalink: /oneclick/
 Run `./setup.sh` or the correct one depending on your Linux OS to make the VM. Monterey may not work, as it is very picky about hardware.
 Once the VM boots up, just hit enter even if it's a black screen or a cut off image (do this every boot) Then format the biggest drive as macOS Extended Journaled (should be a little bigger than 64GB, then go to reinstall macOS and install it to the newly formatted drive.
 
-Once installed, run `./basic.sh` to boot up the VM again. Don't worry, if the macOS setup screen is laggy and slow, it is not how fast the VM will be. I don't know why it's so laggy, but once it is finished, the VM should be much faster. Once macOS is succesfully installed, you can instead run `./basic-no-installer.sh` to boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer. Do not run the setup file twice if the install was succesful, as it will redownload the image and that is not needed.
+Once it boots, you can install macOS. Remember to partition in Disk Utility first! (macOS extended journaled). Once macOS is succesfully installed, you can select the macOS partition with ctrl+enter to set it as the default boot and automatically boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer.
 
 ## You're done!
 
