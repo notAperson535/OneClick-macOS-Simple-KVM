@@ -7,14 +7,14 @@ permalink: /manual/
 You'll need a Linux system with `qemu` (3.1 or later), `python3`, `pip` and the KVM modules enabled. A Mac is **not** required. Some examples for different distributions:
 
 ```
-sudo apt-get install qemu-system qemu-utils python3 python-pip  # for Ubuntu, Debian, Mint, and PopOS.
+sudo apt-get install qemu-system qemu-utils python3 python3-pip  # for Ubuntu, Debian, Mint, and PopOS.
 sudo pacman -S qemu python python3-pip python-wheel  # for Arch and Manjaro.
 sudo xbps-install -Su qemu python3 python3-pip  # for Void Linux.
 sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for openSUSE Tumbleweed
 sudo dnf install qemu qemu-img python3 python3-pip # for Fedora
-sudo eopkg install qemu python3 python-pip # for Solus OS
+sudo eopkg install qemu python3 python3-pip # for Solus OS
 sudo emerge -a qemu python dev-python/pip # for Gentoo
-To use in NIXOS add qemu, pyton3, and python-pip to your packages list.
+To use in NIXOS add qemu, pyton3, and python3-pip to your packages list.
 ```
 
 If you are installing on Solus OS, extracting qemu may take a while, so be patient.
