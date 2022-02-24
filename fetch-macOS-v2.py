@@ -52,7 +52,7 @@ INFO_REQURED = [INFO_PRODUCT, INFO_IMAGE_LINK, INFO_IMAGE_HASH, INFO_IMAGE_SESS,
 
 def run_query(url, headers, post=None, raw=False):
     if post is not None:
-        data = '\n'.join([entry + '=' + post[entry] for entry in post])
+        data = '\n'.join([f'{entry}={post[entry]}' for entry in post])
         if sys.version_info[0] >= 3:
             data = data.encode('utf-8')
     else:
@@ -66,14 +66,14 @@ def run_query(url, headers, post=None, raw=False):
 
 
 def generate_id(itype, nid=None):
-    valid_chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
     if nid is None:
-        return ''.join(random.choice(valid_chars) for i in range(itype))
+        valid_chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+        return ''.join(random.choice(valid_chars) for _ in range(itype))
     return nid
 
 
 def product_mlb(mlb):
-    return '00000000000' + mlb[11] + mlb[12] + mlb[13] + mlb[14] + '00'
+    return f'00000000000{mlb[11]}{mlb[12]}{mlb[13]}{mlb[14]}00'
 
 
 def mlb_from_eeee(eeee):
@@ -81,7 +81,7 @@ def mlb_from_eeee(eeee):
         print('ERROR: Invalid EEEE code length!')
         sys.exit(1)
 
-    return '00000000000' + eeee + '00'
+    return f'00000000000{eeee}00'
 
 def get_session(args):
     headers = {
@@ -104,7 +104,7 @@ def get_session(args):
                 if cookie.startswith('session='):
                     return cookie
 
-    raise RuntimeError('No session in headers ' + str(headers))
+    raise RuntimeError(f'No session in headers {str(headers)}')
 
 
 def get_image_info(session, bid, mlb=MLB_ZERO, diag=False, os_type='default', cid=None):
@@ -145,7 +145,7 @@ def get_image_info(session, bid, mlb=MLB_ZERO, diag=False, os_type='default', ci
 
     for k in INFO_REQURED:
         if k not in info:
-            raise RuntimeError('Missing key ' + k)
+            raise RuntimeError(f'Missing key {k}')
 
     return info
 
@@ -162,9 +162,9 @@ def save_image(url, sess, filename='', directory=''):
     if filename == '':
         filename = os.path.basename(purl.path)
     if filename.find('/') >= 0 or filename == '':
-        raise RuntimeError('Invalid save path ' + filename)
+        raise RuntimeError(f'Invalid save path {filename}')
 
-    print('Saving ' + url + ' to ' + filename + '...')
+    print(f'Saving {url} to {filename}...')
 
     with open(os.path.join(directory, filename), 'wb') as fhandle:
         response = run_query(url, headers, raw=True)
@@ -221,10 +221,10 @@ def action_download(args):
                           diag=args.diagnostics, os_type=args.os_type)
     if args.verbose:
         print(info)
-    print('Downloading ' + info[INFO_PRODUCT] + '...')
-    dmgname = '' if args.basename == '' else args.basename + '.dmg'
+    print(f'Downloading {info[INFO_PRODUCT]}...')
+    dmgname = '' if args.basename == '' else f'{args.basename}.dmg'
     save_image(info[INFO_IMAGE_LINK], info[INFO_IMAGE_SESS], dmgname, args.outdir)
-    cnkname = '' if args.basename == '' else args.basename + '.chunklist'
+    cnkname = '' if args.basename == '' else f'{args.basename}.chunklist'
     save_image(info[INFO_SIGN_LINK], info[INFO_SIGN_SESS], cnkname, args.outdir)
     return 0
 
@@ -395,7 +395,7 @@ def action_guess(args):
         except Exception as e:
             print('WARN: Failed to check {}, exception: {}'.format(model, str(e)))
 
-    if len(supported) > 0:
+    if supported:
         print('SUCCESS: MLB {} looks supported for:'.format(mlb))
         for model in supported:
             print('- {}, up to {}, default: {}, latest: {}'.format(model, supported[model][0],
@@ -492,7 +492,7 @@ def main():
             if args.shortname == product['short']:
                 break
             else:
-                index = index+1
+                index += 1
 
 
 
