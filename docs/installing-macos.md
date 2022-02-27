@@ -2,9 +2,6 @@
 title: Installing macOS
 permalink: /installing-macos/
 --- 
-
-# Installing macOS
-
 ## Loading the VM
 
 Load up the VM with `sudo ./basic.sh` to start up the VM. Then select the macOS Installer, and hit enter.
@@ -22,3 +19,7 @@ Now select the "Reinstall macOS", and open it. Go through the setup screen, and 
 Once you get to the setup screen, you will probably notice that it is very laggy, this is ok, as it will get much faster once you get through it. A reboot is always reccomended after you are done installing.
 
 [Now head over to Finishing Up to see how to set up the VM to be faster and have more features like sound and display acceleration](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/finishing-up)
+
+## Setting the default boot device
+
+Once macOS is succesfully installed, you can select the macOS partition with ctrl+enter to set it as the default boot and automatically boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer.
