@@ -8,7 +8,7 @@ Load up the VM with `sudo ./basic.sh` to start up the VM. Then select the macOS 
 
 ## Partitioning in Disk Utility
 
-One you get to the macOS setup screen, select "Disk Utility", and then select the biggest drive, it should be around 64 gigabytes or a little higher. Then select format, and make sure to format it as macOS Extended Journaled. You should also name it something like "Macintosh SSD" Without this the install will not complete. Once you are done formatting, close out of Disk Utility and move on to the next step.
+One you get to the macOS setup screen, select "Disk Utility", and then select the biggest drive, it should be around 64 gigabytes or a little higher. Then select format, and make sure to format it as macOS Extended Journaled (NOT case-sensitive). You should also name it something like "Macintosh SSD" Without this the install will not complete. Once you are done formatting, close out of Disk Utility and move on to the next step.
 
 ## Installing
 
