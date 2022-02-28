@@ -4,7 +4,7 @@ permalink: /installing-macos/
 --- 
 ## Loading the VM
 
-Load up the VM with `sudo ./basic.sh` to start up the VM. Then select the macOS Installer, and hit enter.
+Load up the VM with `sudo ./basic.sh` to start up the VM, for Windows, you would run `sudo HEADLESS=1 ./basic.sh`, then open [VNC Viewer](https://www.realvnc.com/connect/download/viewer/), and connect to `localhost:5900`. Then select the macOS Installer in OpenCore, and hit enter.
 
 ## Partitioning in Disk Utility
 
