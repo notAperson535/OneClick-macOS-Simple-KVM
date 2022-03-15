@@ -34,7 +34,7 @@
 	  <emulator>/run/current-system/sw/bin/qemu-system-x86_64</emulator>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2'/>
-      <source file='VMDIR/ESP.qcow2'/>
+      <source file='VMDIR/OpenCore/OpenCore.qcow2'/>
       <target dev='sda' bus='sata'/>
       <address type='drive' controller='0' bus='0' target='0' unit='0'/>
     </disk>
