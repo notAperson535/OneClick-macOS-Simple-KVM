@@ -29,7 +29,7 @@ qemu-system-x86_64 \
     -netdev user,id=net0 \
     -device e1000-82545em,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
     -device ich9-ahci,id=sata \
-    -drive id=ESP,if=none,format=qcow2,file="$VMDIR/ESP.qcow2" \
+    -drive id=ESP,if=none,format=qcow2,file="$VMDIR/OpenCore/OpenCore.qcow2" \
     -device ide-hd,bus=sata.2,drive=ESP \
     -drive id=InstallMedia,format=raw,if=none,file="$VMDIR/BaseSystem.img" \
     -device ide-hd,bus=sata.3,drive=InstallMedia \
