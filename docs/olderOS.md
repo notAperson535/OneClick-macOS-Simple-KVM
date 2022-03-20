@@ -7,7 +7,9 @@ permalink: /older-os/
 
 First you must update to the preview branch with this command
 
-`git pull origin preview`
+```
+git pull origin preview
+```
 
 ## Editing config.plist locally
 
