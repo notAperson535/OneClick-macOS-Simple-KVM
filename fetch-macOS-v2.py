@@ -95,7 +95,7 @@ def get_session(args):
     if args.verbose:
         print('Session headers:')
         for header in headers:
-            print('{}: {}'.format(header, headers[header]))
+            print(f'{header}: {headers[header]}')
 
     for header in headers:
         if header.lower() == 'set-cookie':
@@ -173,7 +173,7 @@ def save_image(url, sess, filename='', directory=''):
         # print(total_size)
         if total_size < 1:
             total_size = response.headers['content-length']
-            print("Note: The total download size is %s bytes" % total_size)
+            print(f"Note: The total download size is {total_size} bytes")
         else:
             print("Note: The total download size is %0.2f MB" % total_size)
         size = 0
@@ -270,32 +270,43 @@ def action_selfcheck(args):
 
     if valid_default[INFO_PRODUCT] == valid_latest[INFO_PRODUCT]:
         # Valid MLB must give different default and latest if this is not a too new product.
-        print('ERROR: Cannot determine any previous product, got {}'.format(valid_default[INFO_PRODUCT]))
+        print(
+            f'ERROR: Cannot determine any previous product, got {valid_default[INFO_PRODUCT]}'
+        )
+
         return 1
 
     if product_default[INFO_PRODUCT] != product_latest[INFO_PRODUCT]:
         # Product-only MLB must give the same value for default and latest.
-        print('ERROR: Latest and default do not match for product MLB, got {} and {}'.format(
-            product_default[INFO_PRODUCT], product_latest[INFO_PRODUCT]))
+        print(
+            f'ERROR: Latest and default do not match for product MLB, got {product_default[INFO_PRODUCT]} and {product_latest[INFO_PRODUCT]}'
+        )
+
         return 1
 
     if generic_default[INFO_PRODUCT] != generic_latest[INFO_PRODUCT]:
         # Zero MLB always give the same value for default and latest.
-        print('ERROR: Generic MLB gives different product, got {} and {}'.format(
-            generic_default[INFO_PRODUCT], generic_latest[INFO_PRODUCT]))
+        print(
+            f'ERROR: Generic MLB gives different product, got {generic_default[INFO_PRODUCT]} and {generic_latest[INFO_PRODUCT]}'
+        )
+
         return 1
 
     if valid_latest[INFO_PRODUCT] != generic_latest[INFO_PRODUCT]:
         # Valid MLB must always equal generic MLB.
-        print('ERROR: Cannot determine unified latest product, got {} and {}'.format(
-            valid_latest[INFO_PRODUCT], generic_latest[INFO_PRODUCT]))
+        print(
+            f'ERROR: Cannot determine unified latest product, got {valid_latest[INFO_PRODUCT]} and {generic_latest[INFO_PRODUCT]}'
+        )
+
         return 1
 
     if product_default[INFO_PRODUCT] != valid_default[INFO_PRODUCT]:
         # Product-only MLB can give the same value with valid default MLB.
         # This is not an error for all models, but for our chosen code it is.
-        print('ERROR: Valid and product MLB give mismatch, got {} and {}'.format(
-            product_default[INFO_PRODUCT], valid_default[INFO_PRODUCT]))
+        print(
+            f'ERROR: Valid and product MLB give mismatch, got {product_default[INFO_PRODUCT]} and {valid_default[INFO_PRODUCT]}'
+        )
+
         return 1
 
     print('SUCCESS: Found no discrepancies with MLB validation algorithm!')
@@ -325,9 +336,9 @@ def action_verify(args):
     # Verify our MLB number.
     if uvalid_default[INFO_PRODUCT] != uvalid_latest[INFO_PRODUCT]:
         if uvalid_latest[INFO_PRODUCT] == generic_latest[INFO_PRODUCT]:
-            print('SUCCESS: {} MLB looks valid and supported!'.format(args.mlb))
+            print(f'SUCCESS: {args.mlb} MLB looks valid and supported!')
         else:
-            print('SUCCESS: {} MLB looks valid, but probably unsupported!'.format(args.mlb))
+            print(f'SUCCESS: {args.mlb} MLB looks valid, but probably unsupported!')
         return 0
 
     print('UNKNOWN: Run selfcheck, check your board-id, or try again later!')
@@ -335,13 +346,18 @@ def action_verify(args):
     # Here we have matching default and latest products. This can only be true for very
     # new models. These models get either latest or special builds.
     if uvalid_default[INFO_PRODUCT] == generic_latest[INFO_PRODUCT]:
-        print('UNKNOWN: {} MLB can be valid if very new!'.format(args.mlb))
+        print(f'UNKNOWN: {args.mlb} MLB can be valid if very new!')
         return 0
     if uproduct_default[INFO_PRODUCT] != uvalid_default[INFO_PRODUCT]:
-        print('UNKNOWN: {} MLB looks invalid, other models use product {} instead of {}!'.format(
-            args.mlb, uproduct_default[INFO_PRODUCT], uvalid_default[INFO_PRODUCT]))
+        print(
+            f'UNKNOWN: {args.mlb} MLB looks invalid, other models use product {uproduct_default[INFO_PRODUCT]} instead of {uvalid_default[INFO_PRODUCT]}!'
+        )
+
         return 0
-    print('UNKNOWN: {} MLB can be valid if very new and using special builds!'.format(args.mlb))
+    print(
+        f'UNKNOWN: {args.mlb} MLB can be valid if very new and using special builds!'
+    )
+
     return 0
 
 
@@ -372,8 +388,10 @@ def action_guess(args):
 
                 if model_latest[INFO_PRODUCT] != generic_latest[INFO_PRODUCT]:
                     if db[model] == 'current':
-                        print('WARN: Skipped {} due to using latest product {} instead of {}'.format(
-                            model, model_latest[INFO_PRODUCT], generic_latest[INFO_PRODUCT]))
+                        print(
+                            f'WARN: Skipped {model} due to using latest product {model_latest[INFO_PRODUCT]} instead of {generic_latest[INFO_PRODUCT]}'
+                        )
+
                     continue
 
                 user_default = get_image_info(session, bid=model, mlb=mlb,
@@ -393,16 +411,18 @@ def action_guess(args):
                     supported[model] = [db[model], user_default[INFO_PRODUCT], user_latest[INFO_PRODUCT]]
 
         except Exception as e:
-            print('WARN: Failed to check {}, exception: {}'.format(model, str(e)))
+            print(f'WARN: Failed to check {model}, exception: {str(e)}')
 
     if supported:
-        print('SUCCESS: MLB {} looks supported for:'.format(mlb))
-        for model in supported:
-            print('- {}, up to {}, default: {}, latest: {}'.format(model, supported[model][0],
-                                                                   supported[model][1], supported[model][2]))
+        print(f'SUCCESS: MLB {mlb} looks supported for:')
+        for model, value in supported.items():
+            print(
+                f'- {model}, up to {supported[model][0]}, default: {value[1]}, latest: {supported[model][2]}'
+            )
+
         return 0
 
-    print('UNKNOWN: Failed to determine supported models for MLB {}!'.format(mlb))
+    print(f'UNKNOWN: Failed to determine supported models for MLB {mlb}!')
 
 
 # https://stackoverflow.com/questions/2280334/shortest-way-of-creating-an-object-with-arbitrary-attributes-in-python
