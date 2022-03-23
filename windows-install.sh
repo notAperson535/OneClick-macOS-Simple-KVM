@@ -9,4 +9,3 @@ cd WSL2-Linux-Kernel-4.19.104-microsoft-standard/
 cp Microsoft/config-wsl .config
 make menuconfig
 cd ~
-nano .bashrc
