@@ -3,6 +3,10 @@ title: Finishing Up
 permalink: /finishing-up/
 ---
 
+## Setting the default boot device
+
+Once macOS is succesfully installed, you can select the macOS partition on the boot screen (OpenCore), with ctrl+enter to set it as the default boot device. That means it will boot up the VM without booting the macOS Installer. This will prevent OpenCore from default booting the installer.
+
 ## Changing VM settings
 
 To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/performance), setting up [bridged networking](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/networking), adding [passthrough hardware (for GPUs)](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough), tweaking [screen resolution](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/resolution), and [enabling sound features](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough).
