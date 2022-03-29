@@ -8,7 +8,7 @@ Load up the VM with `sudo ./basic.sh` to start up the VM, for Windows, you would
 
 ## Partitioning in Disk Utility
 
-One you get to the macOS setup screen, select "Disk Utility", and then select the biggest drive, it should be around 64 gigabytes or a little higher. Then select format, and make sure to format it as macOS Extended Journaled (NOT case-sensitive). You should also name it something like "Macintosh SSD" Without this the install will not complete. Once you are done formatting, close out of Disk Utility and move on to the next step.
+You now must format the disk, otherwise the macOS installer will not be able to find you drive. Once you get to the macOS setup screen, select `Disk Utility`, and then select the biggest drive, it should be around 64 gigabytes or whatever you specified when you created `macOS.qcow2` (this is only for the manual method, the one-click method does this automatically). Then select `Erase` or `Format`, depending on which you see, and make sure to format the disk as macOS Extended Journaled (NOT case-sensitive). You should also name it something like `Macintosh SSD`. Once you are done formatting, close out of Disk Utility and move on to the next step.
 
 ## Installing
 
