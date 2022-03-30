@@ -20,7 +20,7 @@ Don't use the Just-OpenCore branch of this, it is not updated ever.
 
 If you do not see files in this guide, or if you want to update your version, which I recommend doing at least one a month, run this command
 ```
-git pull origin master
+git pull --rebase
 ```
 
 ## Using This Repository
