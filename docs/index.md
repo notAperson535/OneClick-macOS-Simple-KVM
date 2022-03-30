@@ -22,6 +22,10 @@ If you do not see files in this guide, or if you want to update your version, wh
 ```
 git pull --rebase
 ```
+If that throws an error, try this command
+```
+git pull origin master
+```
 
 ## Using This Repository
 
