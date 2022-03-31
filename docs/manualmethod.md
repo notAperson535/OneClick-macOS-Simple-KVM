@@ -34,14 +34,13 @@ qemu-img convert RecoveryImage.dmg -O raw BaseSystem.img
 ```
 
 ## Bringing Your Own macOS bootable file
-If you want to bring your own bootable file, whether it be for an older version of macOS or you already have a file, drag it into the OneClick-macOS-Simple-KVM folder. Then, Check if it is named BaseSystem if it's not rename it to BaseSystem. Most likely it would be named named RecoveryImage.
+If you want to bring your own bootable file, whether you already have a file or you have a custom version, drag it into the OneClick-macOS-Simple-KVM folder. Then, Check if it is named BaseSystem if it's not rename it to BaseSystem.
+
 If the file is now named BaseSystem.dmg, you must run this command to convert it to BaseSystem.img
 ```
 qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
 ```
-If it is named BaseSystem.img, you are good to go
-
-Hint (If you want to use an older version of macOS, OpenCore can go back to macOS 10.4)
+If it is already named BaseSystem.img, you are good to go
 
 ## Step 2
 Create an empty hard disk using `qemu-img`, changing the name and size to preference:
@@ -53,13 +52,6 @@ if you change the drive name, change the line below according to the new name in
 ```
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
 ```
-> Note: If you're running on a headless system (such as on Cloud providers), you will need `-nographic` and `-vnc :0 -k en-us` to the end of basic.sh for VNC support.
-
-Then run `basic.sh` to start the machine and install macOS. Remember to partition in Disk Utility first! (macOS extended journaled) Once macOS is succesfully installed, you can select the macOS partition with ctrl+enter to set it as the default boot and automatically boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer.
-
-If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-mouse \` to `-usb -device usb-kbd -device usb-tablet \`
-
-If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages.
 
 ## Step 2a (Virtual Machine Manager)
 1. If instead of QEMU, you'd like to import the setup into Virt-Manager for further configuration, just run `sudo ./make.sh --add`.
