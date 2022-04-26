@@ -31,6 +31,8 @@ git pull origin master
 
 You have three options for using this repository, the [manual method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/manual/), the [OneClick method](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/oneclick/), or [installing on Windows](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/windows/).
 
+To see the all of the links, whether you've done this before or just want to get to a specific part of the guide, click [here](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/links)
+
 ## Migrating (Coming from other repositories)
 
 If you want to come from other repositories, the guide is [here](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/migrating)
