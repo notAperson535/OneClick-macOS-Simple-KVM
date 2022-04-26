@@ -3,7 +3,7 @@ title: Links
 permalink: /links/
 --- 
 
-## Install Guides
+# Install Guides
 
 ### Part 1
 
@@ -19,7 +19,7 @@ permalink: /links/
 
 [Finishing Up](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/finishing-up)
 
-## Post-Install Guides
+# Post-Install Guides
 
 [Setting Up Bridged Netorking](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/networking)
 
