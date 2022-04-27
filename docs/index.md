@@ -14,9 +14,11 @@ I did not make the download script, Kholia did.
 New to macOS and KVM? Check [the FAQs.](docs/FAQs.md)
 
 ## IMPORTANT
+
+#### 4/27/2022 - This repository used to be attached to [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM) as a fork, but do to a number of reasons I have decided to detach it. If this causes any problems, specifically in the git CLI, then feel free to post and issue and I will respond as soon as I can.
+
 You must download or clone this GitHub repository before you begin
 Do not use forks of `notAperson535/OneClick-macOS-Simple-KVM` as I update this repository a lot, and forks are usually behind.
-Don't use the Just-OpenCore branch of this, it is not updated ever.
 
 If you do not see files in this guide, or if you want to update your version, which I recommend doing at least one a month, run this command
 ```
