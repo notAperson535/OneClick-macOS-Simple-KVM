@@ -1,5 +1,5 @@
 ---
-title: How to increase screen resolution for macOS-Simple-KVM
+title: How to increase screen resolution
 permalink: /docs/resolution/
 --- 
 
