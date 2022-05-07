@@ -30,3 +30,5 @@ permalink: /links/
 [Fixing Apple ID](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/apple-id)
 
 [Passing through GPUs and Sound](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough/)
+
+[Resizing the macOS Disk](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/resizing/)
