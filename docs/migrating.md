@@ -19,4 +19,4 @@ Once that has completed, delete the macOS.img file. Then run `./basic.sh` and en
 
 ## You're Done!
 
-To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](/docs/guide-performance), setting up [bridged networking](/docs/guide-networking), adding [passthrough hardware (for GPUs)](/docs/guide-passthrough), tweaking [screen resolution](/docs/guide-screen-resolution), and [enabling sound features](/docs/guide-passthrough).
+To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/performance), setting up [bridged networking](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/networking), adding [passthrough hardware (for GPUs)](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough), tweaking [screen resolution](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/resolution), and [enabling sound features](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/passthrough).

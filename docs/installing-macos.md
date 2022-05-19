@@ -20,6 +20,6 @@ Now select the "Reinstall macOS", and open it. Go through the setup screen, and 
 
 Once you get to the setup screen, you will probably notice that it is very laggy, this is ok, as it will get much faster once you get through it. A reboot is always reccomended after you are done installing.
 
-## [Now head over to Finishing Up to see how to set up the VM to be faster and have more features like sound and display acceleration](/docs/finishing-up)
+## [Now head over to Finishing Up to see how to set up the VM to be faster and have more features like sound and display acceleration](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/finishing-up)
 
 (Don't skip this)
