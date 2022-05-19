@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/OneClick-macOS-Simple-KVM logo.svg',
+  favicon: 'img/OneClick-macOS-Simple-KVM logo.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -53,7 +53,7 @@ const config = {
         title: 'OneClick macOS Simple KVM',
         logo: {
           alt: 'OneClick macOS Simple KVM Logo',
-          src: 'img/favicon.ico',
+          src: 'img/OneClick-macOS-Simple-KVM logo.ico',
         },
         items: [
           {
@@ -78,23 +78,6 @@ const config = {
               {
                 label: 'Tutorial',
                 to: '/docs/start-here',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
