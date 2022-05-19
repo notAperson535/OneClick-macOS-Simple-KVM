@@ -54,6 +54,7 @@ const sidebars = {
           'guide-networking',
           'guide-passthrough',
           'guide-screen-resolution',
+          'guide-resizing',
         ],
       },
     ],
