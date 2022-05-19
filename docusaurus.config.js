@@ -53,7 +53,7 @@ const config = {
         title: 'OneClick macOS Simple KVM',
         logo: {
           alt: 'OneClick macOS Simple KVM Logo',
-          src: 'img/OneClick-macOS-Simple-KVM logo.ico',
+          src: 'img/OneClick-macOS-Simple-KVM logo.svg',
         },
         items: [
           {
