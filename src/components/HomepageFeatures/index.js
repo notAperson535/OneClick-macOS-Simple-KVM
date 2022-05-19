@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Run your needed apps',
-    Jpg: require('@site/static/img/https://is2-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5f/a6/51/5fa65193-8703-76aa-6a38-562d3ff849f1/b8946957-bf8e-4a55-937e-b516824a4294_1-_Documentation-dark.png/643x0w.jpg').default,
+    Jpg: require('https://is2-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5f/a6/51/5fa65193-8703-76aa-6a38-562d3ff849f1/b8946957-bf8e-4a55-937e-b516824a4294_1-_Documentation-dark.png/643x0w.jpg').default,
     description: (
       <>
         You can run XCode and Final Cut Pro
