@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Run your needed apps',
-    Png: require('@site/static/img/safari.svg').default,
+    Svg: require('@site/static/img/safari.svg').default,
     description: (
       <>
         You can run XCode and Final Cut Pro
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Or just use as a main OS',
-    Png: require('@site/static/img/xcode.svg').default,
+    Svg: require('@site/static/img/xcode.svg').default,
     description: (
       <>
         If you allot the VM all of your memory and CPUs, you can use it as your main machine.
