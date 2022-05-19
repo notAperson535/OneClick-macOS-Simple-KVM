@@ -3,10 +3,10 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - docs
   pull_request:
     branches:
-      - main
+      - docs
       
   workflow_dispatch:
 
