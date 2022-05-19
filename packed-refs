@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+92905030199c2c3f99da42335a40da300378fb24 refs/remotes/origin/Just-OpenCore
+46073c382d6af27950f1a08ae0c283f7bffec399 refs/remotes/origin/master
+bb53af613517fba9103492922f640b32164d80c7 refs/remotes/origin/patch-1
+91141411b032a155d470d47f9b75f990db0c75d3 refs/remotes/origin/preview

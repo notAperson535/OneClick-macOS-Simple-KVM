@@ -1,9 +1,7 @@
 ---
-title: One-Click Method
-permalink: /oneclick/
+title: OneClick Method
 ---
 
-## OneClick Method
 - `setup.sh` is for Debian based Linux Repositories like Ubuntu
 - `setupArch.sh` is for Arch based Linux Repositories like Manjaro.
 - `setupFedora.sh` is for Fedora based Linux Repositories.
@@ -14,4 +12,4 @@ Once the VM boots up, just hit enter even if it's a black screen or a cut off im
 
 Once it boots, you can install macOS. Remember to partition in Disk Utility first! (macOS extended journaled). Once macOS is succesfully installed, you can select the macOS partition with ctrl+enter to set it as the default boot and automatically boot up the VM without the macOS Installer attached. This will prevent OpenCore from default booting the installer.
 
-## [Now head over to installing macOS for instructions on correctly installing macOS](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/installing-macos/)
+## [Now head over to installing macOS for instructions on correctly installing macOS](/docs/installing-macos/)

@@ -1,5 +1,5 @@
 ---
-title: Guide to Performance Tuning
+title: Guide to Performance Tuning (Adding Memory and CPU cores)
 permalink: /docs/performance/
 --- 
 The default macOS VM configuration (`basic.sh`) assumes some sane defaults, however this may not reflect the actual topology or peformance capabilities of the underlaying machine.

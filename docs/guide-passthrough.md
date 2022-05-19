@@ -1,5 +1,5 @@
 ---
-title: Guide to PCIe Passthrough
+title: Guide to PCIe Passthrough (GPU and Sound)
 permalink: /docs/passthrough/
 --- 
 

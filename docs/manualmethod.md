@@ -1,9 +1,7 @@
 ---
 title: Manual Method
-permalink: /manual/
 --- 
 
-## Getting Started
 You'll need a Linux system with `qemu` (3.1 or later), `python3`, `pip` and the KVM modules enabled. A Mac is **not** required. Some examples for different distributions:
 
 ```
@@ -63,4 +61,4 @@ If you're running on a headless system (such as on Cloud providers), set the HEA
 HEADLESS=1 ./basic.sh
 ```
 
-## [Now head over to installing macOS for instructions on correctly installing macOS](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/installing-macos/)
+## [Now head over to installing macOS for instructions on correctly installing macOS](/docs/installing-macos/)
