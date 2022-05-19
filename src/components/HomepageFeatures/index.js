@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Run your needed apps',
-    Png: require(https://www.avanderlee.com/wp-content/uploads/2020/07/xcode-simulator-full-screen-mode.png').default,
+    Png: require('https://www.avanderlee.com/wp-content/uploads/2020/07/xcode-simulator-full-screen-mode.png').default,
     description: (
       <>
         You can run XCode and Final Cut Pro
