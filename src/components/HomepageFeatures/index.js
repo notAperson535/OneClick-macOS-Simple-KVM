@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Easy to Set up and Use',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -13,20 +13,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Run your needed apps',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         You can run XCode and Final Cut Pro
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Or you just prefer macOS and would like to use it without buying a mac.
       </>
     ),
   },
