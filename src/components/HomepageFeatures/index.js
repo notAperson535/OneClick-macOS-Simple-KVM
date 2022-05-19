@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Run your needed apps',
-    Jpg: require('@site/static/img/OneClick-macOS-Simple-KVM logo.svg',
+    Svg: require('@site/static/img/OneClick-macOS-Simple-KVM logo.svg',
     description: (
       <>
         You can run XCode and Final Cut Pro
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Or just use as a main OS',
-    Png: require('@site/static/img/OneClick-macOS-Simple-KVM logo.svg',
+    Svg: require('@site/static/img/OneClick-macOS-Simple-KVM logo.svg',
     description: (
       <>
         If you allot the VM all of your memory and CPUs, you can use it as your main machine.
