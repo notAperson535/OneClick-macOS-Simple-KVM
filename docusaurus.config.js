@@ -37,7 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/notAperson535/OneClick-macOS-Simple-KVM-docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/notAperson535/OneClick-macOS-Simple-KVM/tree/docs/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
