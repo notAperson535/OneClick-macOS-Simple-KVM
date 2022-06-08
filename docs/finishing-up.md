@@ -1,6 +1,5 @@
 ---
 title: Finishing Up
-permalink: /finishing-up/
 ---
 
 ## Setting the default boot device
@@ -9,7 +8,7 @@ Once macOS is succesfully installed, you can select the macOS partition on the b
 
 ## Changing VM settings
 
-To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](/docs/guide-performance), setting up [bridged networking](/docs/guide-networking), adding [passthrough hardware (for GPUs)](/docs/guide-passthrough), tweaking [screen resolution](/docs/guide-screen-resolution), and [enabling sound features](/docs/guide-passthrough).
+To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](/docs/guide-performance), setting up [bridged networking](/docs/guide-networking), adding [passthrough hardware (for GPUs)](/docs/guide-passthrough), [tweaking screen resolution](/docs/guide-screen-resolution), [turning off verbose](/docs/guide-disabling-verbose) and [enabling sound features](/docs/guide-passthrough).
 
 ## Troubleshooting
 

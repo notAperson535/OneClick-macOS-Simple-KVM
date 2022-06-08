@@ -1,6 +1,5 @@
 ---
 title: Apple-ID fixing
-permalink: /docs/apple-id/
 ---
  
 

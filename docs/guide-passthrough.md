@@ -1,6 +1,5 @@
 ---
 title: Guide to PCIe Passthrough (GPU and Sound)
-permalink: /docs/passthrough/
 --- 
 
 ## Enable BIOS features

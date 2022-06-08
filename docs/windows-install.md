@@ -1,6 +1,5 @@
 ---
 title: Installing on Windows
-permalink: /windows/
 --- 
 
 ## Prerequisites:

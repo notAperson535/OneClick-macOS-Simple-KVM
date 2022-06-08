@@ -1,6 +1,5 @@
 ---
 title: Installing macOS
-permalink: /installing-macos/
 --- 
 ## Loading the VM
 

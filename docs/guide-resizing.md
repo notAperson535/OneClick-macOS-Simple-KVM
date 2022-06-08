@@ -1,6 +1,5 @@
 ---
 title: How to increase disk size
-permalink: /docs/resizing/
 --- 
 
 Close the VM before starting

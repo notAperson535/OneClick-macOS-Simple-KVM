@@ -55,7 +55,8 @@ const sidebars = {
           'guide-passthrough',
           'guide-screen-resolution',
           'guide-resizing',
-          'guide-Apple-ID'
+          'guide-Apple-ID',
+          'guide-disabling-verbose'
         ],
       },
     ],
