@@ -13,6 +13,8 @@ I did not make the download script, Kholia did.
 
 New to macOS and KVM? Check [the FAQs.](docs/FAQs.md)
 
+[Join the Discord server for support and more!](https://discord.gg/XaEdCSPyNa)
+
 ## IMPORTANT
 
 #### 5/19/2022 - New website look! Hope you like it!
