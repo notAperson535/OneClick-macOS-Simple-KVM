@@ -12,5 +12,14 @@ title: Apple-ID fixing
  - Type `sudo diskutil mount diskYsZ`, using the disk/partition location name where you see EFI. It should look like this:
  ![image](https://user-images.githubusercontent.com/95918679/152873359-9f3586e9-32f7-411a-8fd7-25c80a94aeec.png)
 3. Download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and gernerate a set of serials for the mac model shown under "System Report" ("iMacPro1,1").
-4. Locate the plist file at `/Volumes/EFI/OC/config.plist`. Insert the generated serials into the apropiate places in that file. The correct places can be found [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) You can edit it by hand or use [ProperTree](https://github.com/corpnewt/ProperTree) for this.
-5. Reboot. You should be able to log in with your Apple-ID now.
+4. Locate the plist file at `/Volumes/EFI/OC/config.plist`. Insert the generated serials into generic section in the appropriate places.
+
+| GenSMBIOS Value | config.plist       |
+| --------------- | ------------------ | 
+| Type            | SystemProductName  | 
+| Serial          | SystemSerialNumber |
+| Board Serial    | MLB                |
+| SmUUID          | SystemUUID         |
+
+5. You can edit it by hand or use [ProperTree](https://github.com/corpnewt/ProperTree) for this.
+6. Reboot. You should be able to log in with your Apple-ID now.
