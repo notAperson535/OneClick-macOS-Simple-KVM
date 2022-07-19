@@ -5,4 +5,4 @@ By: notAperson
 
 [Install guide here](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/)
 
-[Discord Server Here](https://discord.gg/bcbNXsZ7)
+[Discord Server Here](https://discord.gg/XaEdCSPyNa)
