@@ -13,7 +13,7 @@ MOREARGS=()
     MOREARGS+=(-nographic -vnc :0 -k en-us)
 }
 
-qemu-system-x86_64 \
+args=(
     -enable-kvm \
     -m 4G \
     -machine q35,accel=kvm \
@@ -36,3 +36,6 @@ qemu-system-x86_64 \
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
     -device ide-hd,bus=sata.4,drive=SystemDisk \
     "${MOREARGS[@]}"
+)
+
+qemu-system-x86_64 "${args[@]}"
