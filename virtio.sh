@@ -6,7 +6,7 @@ OVMF=$VMDIR/firmware
 #export QEMU_AUDIO_DRV=pa
 #QEMU_AUDIO_DRV=pa
 
-qemu-system-x86_64 \
+args=(
     -nodefaults \
     -enable-kvm \
     -m 4G \
@@ -25,3 +25,6 @@ qemu-system-x86_64 \
     -drive id=ESP,if=virtio,format=qcow2,file="$VMDIR/ESP.qcow2" \
     -drive id=InstallMedia,if=virtio,format=raw,file="$VMDIR/BaseSystem.img" \
     -drive id=MyDisk,if=virtio,format=qcow2,file="$VMDIR/macOS.qcow2" \
+)
+
+qemu-system-x86_64 "${args[@]}"
