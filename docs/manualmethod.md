@@ -52,7 +52,10 @@ if you change the drive name, change the line below according to the new name in
 ```
 
 ## Step 2a (Virtual Machine Manager)
-1. If instead of QEMU, you'd like to import the setup into Virt-Manager for further configuration, just run `sudo ./make.sh --add`.
+1. If instead of QEMU, you'd like to import the setup into Virt-Manager for further configuration, just run 
+```
+sudo ./make.sh --add
+```
 2. After running the above command, add `macOS.qcow2` as storage in the properties of the newly added entry for VM.
 
 ## Step 2b (Headless Systems)
