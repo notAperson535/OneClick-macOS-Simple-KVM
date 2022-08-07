@@ -8,6 +8,8 @@ If you are coming from another repository, and want to come here, here is what y
 
 If you are coming from macOS-Simple-KVM, maybe to upgrade to Big Sur or Monterey, it will be very easy. All you have to do is place the BaseSystem file and the file that has macOS installed into the OneClick-macOS-Simple-KVM folder. Then rename the file that has macOS installed (usually MyDisk.qcow2) to macOS.qcow2. Then run `./basic.sh` and enjoy.
 
+You are technically done now, but you can follow the macOS parts of [this guide](https://dortania.github.io/OpenCore-Install-Guide/clover-conversion/) to completely rid clover of your system
+
 ### Coming from OSX-KVM
 
 If you want to come from OSX-KVM, maybe for stability, it will be a little harder and take a little longer. First, place the BaseSystem file and the file that has macOS installed into the OneClick-macOS-Simple-KVM folder. Then, rename the file that has macOS installed (usually mac_hdd_ng.img) to macOS.img. Then run this command.
