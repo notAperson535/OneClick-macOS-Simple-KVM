@@ -59,6 +59,8 @@ cd /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 And run `./setup.sh` to finish the setup and run the macOS VM!
 
+(Note that the max OS you can run is Big Sur, because of some TSC restrictions. I am working on this issue and when it is resolved I will post a message in the [Discord Server](https://discord.gg/XaEdCSPyNa).)
+
 Once setup.sh finsishes , press ctrl+c and run `sudo HEADLESS=1 ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
 
 Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh`.
