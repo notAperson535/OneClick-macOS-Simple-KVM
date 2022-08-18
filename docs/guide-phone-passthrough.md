@@ -28,7 +28,7 @@ Now add this to the new file in nano
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="*",GROUP="users", MODE="0660"
 ```
 
-The 0x05ac vendor ID in this case is for an Apple iPhone 5C. For iphones specifically, it can help to disable usbmuxd with an empty /etc/udev/rules.d/39-usbmuxd.rules. Now, either reboot, or run as root
+The 0x05ac vendor ID in this case is for an Apple iPhone 5C. For iphones specifically, it can help to disable usbmuxd with an empty /etc/udev/rules.d/39-usbmuxd.rules. Now, run this command as root
 
 ```
 sudo udevadm control -R
