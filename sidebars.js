@@ -51,12 +51,13 @@ const sidebars = {
         collapsed: false,
         items: [
           'guide-performance',
-          'guide-networking',
-          'guide-passthrough',
+          'guide-disabling-verbose',
           'guide-screen-resolution',
-          'guide-resizing',
+          'guide-passthrough',
+          'guide-networking',
+          'guide-disk-resizing',
           'guide-Apple-ID',
-          'guide-disabling-verbose'
+          'guide-phone-passthrough'
         ],
       },
     ],
