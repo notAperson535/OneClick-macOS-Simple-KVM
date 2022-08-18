@@ -2,6 +2,7 @@
 title: Passing through your iPhone to macOS (for Xcode)
 --- 
 Original: https://github.com/arindas/mac-on-linux-with-qemu/issues/25#issue-989202268
+
 References: https://stackoverflow.com/questions/67279997/connect-iphone-via-usb-to-sosumi-qemu [sickcodes/Docker-OSX#133](https://github.com/sickcodes/Docker-OSX/issues/133)
 
 Plug your iphone into the usb port, then run `lsusb`
