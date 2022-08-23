@@ -22,7 +22,7 @@ args=(
     -usb -device usb-kbd -device usb-mouse \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:09:49:17 \
-    -drive id=ESP,if=virtio,format=qcow2,file="$VMDIR/ESP.qcow2" \
+    -drive id=OpenCore,if=virtio,format=qcow2,file="$VMDIR/OpenCore.qcow2" \
     -drive id=InstallMedia,if=virtio,format=raw,file="$VMDIR/BaseSystem.img" \
     -drive id=MyDisk,if=virtio,format=qcow2,file="$VMDIR/macOS.qcow2" \
 )
