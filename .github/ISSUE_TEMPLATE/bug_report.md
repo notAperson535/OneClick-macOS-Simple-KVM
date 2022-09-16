@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+**Which operating system are you trying to install?**
+e.g. macOS Monterey
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
