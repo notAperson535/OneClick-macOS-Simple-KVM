@@ -6,7 +6,7 @@ You'll need a Linux system with `qemu` (3.1 or later), `python3`, `pip` and the 
 
 ```
 sudo apt-get install qemu-system qemu-utils python3 python3-pip  # for Ubuntu, Debian, Mint, and PopOS.
-sudo pacman -S qemu python python3-pip python-wheel  # for Arch and Manjaro.
+sudo pacman -Syu qemu-desktop python python-pip python-wheel --needed # for Arch and Manjaro.
 sudo xbps-install -Su qemu python3 python3-pip  # for Void Linux.
 sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for openSUSE Tumbleweed
 sudo dnf install qemu qemu-img python3 python3-pip # for Fedora
