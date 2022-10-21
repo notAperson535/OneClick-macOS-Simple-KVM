@@ -9,7 +9,7 @@ sudo apt-get install qemu-system qemu-utils python3 python3-pip  # for Ubuntu, D
 sudo pacman -Syu qemu-desktop python python-pip python-wheel --needed # for Arch and Manjaro.
 sudo xbps-install -Su qemu python3 python3-pip  # for Void Linux.
 sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for openSUSE Tumbleweed
-sudo dnf install qemu qemu-img python3 python3-pip # for Fedora
+sudo dnf install qemu qemu-img python3 python3-pip libvirt-client # for Fedora
 sudo eopkg install qemu python3 python3-pip # for Solus OS
 sudo emerge -a qemu python dev-python/pip # for Gentoo
 To use in NIXOS add qemu, pyton3, and python3-pip to your packages list.
