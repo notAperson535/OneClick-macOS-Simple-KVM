@@ -90,3 +90,18 @@ Now you'll have to add the following line to `basic.sh`, replacing `-netdev user
 ```
     -netdev bridge,br=br10,id=net0 \
 ```
+
+## `Operation not permitted` on Debian systems
+
+On Debian if you get:
+```
+failed to create tun device: Operation not permitted
+qemu-system-x86_64: bridge helper failed
+```
+it is because qemu-bridge-helper [doesn't have setuid by default](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=765936), one solution is to manually set the setuid bit on the qemu-bridge-helper:
+```
+sudo chmod 4755 /usr/lib/qemu/qemu-bridge-helper
+```
+Please note the effects of this command will be reset on every update of the package qemu-system-common and thus you will have to re-run it.
+
+Another solution is to simply run qemu as root, but that's not recommended.
