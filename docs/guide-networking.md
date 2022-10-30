@@ -94,3 +94,19 @@ Now you'll have to add the following line to `basic.sh`, replacing `-netdev user
 ## Firewall
 
 If you are using iptables or one of its frontends (like ufw) you may need to add a rule for the bridged network. In my case I was using ufw and had to add a rule to allow all in and out anywhere on virbr0. The interface name will depend on which of the steps above you followed.
+
+
+## `Operation not permitted` on Debian systems
+
+On Debian if you get:
+```
+failed to create tun device: Operation not permitted
+qemu-system-x86_64: bridge helper failed
+```
+it is because qemu-bridge-helper [doesn't have setuid by default](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=765936), one solution is to manually set the setuid bit on the qemu-bridge-helper:
+```
+sudo chmod 4755 /usr/lib/qemu/qemu-bridge-helper
+```
+Please note the effects of this command will be reset on every update of the package qemu-system-common and thus you will have to re-run it.
+
+Another solution is to simply run qemu as root, but that's not recommended.

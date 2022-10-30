@@ -42,8 +42,6 @@ Then edit your `basic.sh` file and add these lines
 -device usb-host,bus=ehci.0,vendorid=0x05ac,guest-reset=false,id=iphone \
 ```
 
-Warning if you intend to code with Xcode or upgrade your iPhone with your the VM.
-
 ## Pairing the iOS device to Xcode
 * Open Xcode and go to `Window  Devices and Simulators`.
 * Select your device and then select the Connect via network checkbox to pair your device:
