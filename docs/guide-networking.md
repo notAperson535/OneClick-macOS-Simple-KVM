@@ -68,7 +68,7 @@ You can also use netctl and the qemu bridge helper to control the bridge and tun
 Description="Bridge Interface br10 : DEVICENAME"
 Interface=br10
 Connection=bridge
-BindsToInterfaces=(DEVICENAME)
+BindsToInterfaces=(DEVICENAME) # Do not remove the parenthesis
 IP=dhcp
 # If you want also for DHCPv6,uncomment below line
 #IP6=dhcp
