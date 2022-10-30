@@ -28,6 +28,7 @@ args=(
     -usb -device usb-kbd -device usb-tablet \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
+    -monitor telnet:127.0.0.1:5801,server,nowait \
     -device ich9-ahci,id=sata \
     -drive id=OpenCore,if=none,format=qcow2,file="$VMDIR/OpenCore.qcow2" \
     -device ide-hd,bus=sata.2,drive=OpenCore \
