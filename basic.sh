@@ -18,7 +18,7 @@ args=(
     -m 4G \
     -machine q35,accel=kvm \
     -smp 4,cores=2 \
-    -cpu Penryn,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc \
+    -cpu host,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc,+avx2 \
     -device isa-applesmc,osk="$OSK" \
     -smbios type=2 \
     -drive if=pflash,format=raw,readonly=on,file="$OVMF/OVMF_CODE.fd" \
