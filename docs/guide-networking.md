@@ -91,6 +91,11 @@ Now you'll have to add the following line to `basic.sh`, replacing `-netdev user
     -netdev bridge,br=br10,id=net0 \
 ```
 
+## Firewall
+
+If you are using iptables or one of its frontends (like ufw) you may need to add a rule for the bridged network. In my case I was using ufw and had to add a rule to allow all in and out anywhere on virbr0. The interface name will depend on which of the steps above you followed.
+
+
 ## `Operation not permitted` on Debian systems
 
 On Debian if you get:
