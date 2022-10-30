@@ -10,6 +10,10 @@ Once macOS is succesfully installed, you can select the macOS partition on the b
 
 To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](/docs/guide-performance), setting up [bridged networking](/docs/guide-networking), adding [passthrough hardware (for GPUs)](/docs/guide-passthrough), [tweaking screen resolution](/docs/guide-screen-resolution), [turning off verbose](/docs/guide-disabling-verbose) and [enabling sound features](/docs/guide-passthrough).
 
+## Optimizing
+
+To make the VM run smoother and faster, look here: https://github.com/sickcodes/osx-optimizer
+
 ## Troubleshooting
 
 If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around.
