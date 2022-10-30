@@ -27,7 +27,7 @@ args=(
     -device ich9-intel-hda -device hda-output \
     -usb -device usb-kbd -device usb-tablet \
     -netdev user,id=net0 \
-    -device e1000-82545em,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
+    -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
     -device ich9-ahci,id=sata \
     -drive id=OpenCore,if=none,format=qcow2,file="$VMDIR/OpenCore.qcow2" \
     -device ide-hd,bus=sata.2,drive=OpenCore \
