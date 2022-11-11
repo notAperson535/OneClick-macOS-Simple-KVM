@@ -108,6 +108,10 @@
     <qemu:arg value='isa-applesmc,osk=ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc'/>
     <qemu:arg value='-smbios'/>
     <qemu:arg value='type=2'/>
+    <qemu:arg value="-device"/>
+    <qemu:arg value="intel-hda"/>
+    <qemu:arg value="-device"/>
+    <qemu:arg value="hda-output"/>
   </qemu:commandline>
 </domain>
 
