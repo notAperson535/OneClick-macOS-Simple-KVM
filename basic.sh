@@ -21,11 +21,10 @@ args=(
     -cpu Haswell,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc,+avx2 \
     -device isa-applesmc,osk="$OSK" \
     -smbios type=2 \
+    -device intel-hda -device hda-output \
     -drive if=pflash,format=raw,readonly=on,file="$OVMF/OVMF_CODE.fd" \
-    -drive if=pflash,format=raw,file="$OVMF/OVMF_VARS-1024x768.fd" \
+    -drive if=pflash,format=raw,file="$OVMF/OVMF_VARS.fd" \
     -vga qxl \
-    -device intel-hda \
-    -device hda-output \
     -usb -device usb-kbd -device usb-tablet \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
