@@ -24,7 +24,6 @@ args=(
     -drive if=pflash,format=raw,readonly=on,file="$OVMF/OVMF_CODE.fd" \
     -drive if=pflash,format=raw,file="$OVMF/OVMF_VARS-1024x768.fd" \
     -vga qxl \
-    -device ich9-intel-hda -device hda-output \
     -usb -device usb-kbd -device usb-tablet \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
@@ -36,6 +35,8 @@ args=(
     -device ide-hd,bus=sata.3,drive=InstallMedia \
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
     -device ide-hd,bus=sata.4,drive=SystemDisk \
+    -device intel-hda \
+    -device hda-output \
     "${MOREARGS[@]}"
 )
 
