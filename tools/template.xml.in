@@ -86,9 +86,6 @@
       <listen type='address'/>
       <image compression='off'/>
     </graphics>
-    <sound model='ich9'>
-      <address type='pci' domain='0x0000' bus='0x00' slot='0x1b' function='0x0'/>
-    </sound>
     <video>
       <model type='qxl' ram='65536' vram='65536' vgamem='16384' heads='1' primary='yes'/>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x0'/>
@@ -108,6 +105,10 @@
     <qemu:arg value='isa-applesmc,osk=ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc'/>
     <qemu:arg value='-smbios'/>
     <qemu:arg value='type=2'/>
+    <qemu:arg value="-device"/>
+    <qemu:arg value="intel-hda"/>
+    <qemu:arg value="-device"/>
+    <qemu:arg value="hda-output"/>
   </qemu:commandline>
 </domain>
 
