@@ -32,6 +32,4 @@ Credits : https://github.com/MobCode100/Dastux/blob/main/VoodooHDA-QEMU-KVM.md
 **If you want sound to get working DO NOT execute the VM as root or you will encounter some alsa errors and you won't hear anything !** => Do not run "sudo ./basic.sh" but simply "./basic.sh"
 
 **Same issue with virt-manager : ensure your current user has the appropriate rights ! :**
-sudo adduser $USER libvirt
-sudo adduser $USER kvm
-sudo adduser $USER libvirt-qemu
+sudo adduser $USER libvirt && sudo adduser $USER kvm && sudo adduser $USER libvirt-qemu
