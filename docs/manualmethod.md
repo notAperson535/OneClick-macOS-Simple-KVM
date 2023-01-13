@@ -12,6 +12,7 @@ sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for ope
 sudo dnf install qemu qemu-img python3 python3-pip libvirt-client # for Fedora
 sudo eopkg install qemu python3 python3-pip # for Solus OS
 sudo emerge -a qemu python dev-python/pip # for Gentoo
+sudo dnf install qemu qemu-img python3 python3-pip libvirt-utils -y # for Mageia
 To use in NIXOS add qemu, pyton3, and python3-pip to your packages list.
 ```
 
