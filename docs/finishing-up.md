@@ -8,7 +8,13 @@ Once macOS is succesfully installed, you can select the macOS partition on the b
 
 ## Changing VM settings
 
-To fine-tune the system and improve performance, look in the `docs` folder for more information on [adding memory](/docs/guide-performance), setting up [bridged networking](/docs/guide-networking), adding [passthrough hardware (for GPUs and Sound Cards)](/docs/guide-passthrough), or [without a sound card](/docs/guide-audio) ,[tweaking screen resolution](/docs/guide-screen-resolution), [turning off verbose](/docs/guide-disabling-verbose) and [enabling sound features](/docs/guide-passthrough).
+Here are some guides on how to change the VM settings to best fit your needs:
+* [add memory and change cpu core counts](/docs/guide-performance)
+* set up [bridged networking](/docs/guide-networking)
+* add [passthrough hardware (for GPUs and Sound Cards)](/docs/guide-passthrough), 
+* or [use sound without a sound card](/docs/guide-audio)
+* [tweak the screen resolution](/docs/guide-screen-resolution)
+* [turn off verbose](/docs/guide-disabling-verbose)
 
 ## Optimizing
 
