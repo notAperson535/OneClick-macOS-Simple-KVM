@@ -1,4 +1,4 @@
-sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip -y
+sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip --no-confirm
 
 (ls macOS.qcow2 >> /dev/null 2>&1 && echo "") || qemu-img create -f qcow2 macOS.qcow2 64G
 
