@@ -71,7 +71,7 @@ Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`
 
 Don't close the terminal when the QEMU window is open, as it will shut down the VM and may cause data loss.
 
-## [Now head over to installing macOS for instructions on correctly installing macOS](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/installing-macos/)
+## [Now head over to installing macOS for instructions on correctly installing macOS](https://notaperson535.github.io/OneClick-macOS-Simple-KVM/docs/installing-macos/)
 
 ## Troubleshooting
 
