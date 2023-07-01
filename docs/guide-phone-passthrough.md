@@ -1,6 +1,9 @@
 ---
 title: Passing through your iPhone to macOS (for Xcode)
 --- 
+
+# If you are trying to pass through any other usb device, [use this guide instead](/docs/guide-usb-passthrough)
+
 Original: https://github.com/arindas/mac-on-linux-with-qemu/issues/25#issue-989202268
 
 References: https://stackoverflow.com/questions/67279997/connect-iphone-via-usb-to-sosumi-qemu [sickcodes/Docker-OSX#133](https://github.com/sickcodes/Docker-OSX/issues/133)

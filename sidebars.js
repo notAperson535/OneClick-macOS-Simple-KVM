@@ -58,6 +58,7 @@ const sidebars = {
           'guide-networking',
           'guide-disk-resizing',
           'guide-Apple-ID',
+          'guide-usb-passthrough',
           'guide-phone-passthrough'
         ],
       },
