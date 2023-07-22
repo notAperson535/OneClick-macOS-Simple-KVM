@@ -1,5 +1,5 @@
 ---
-title: Passing through your iPhone to macOS (for Xcode)
+title: Passing through your iPhone to macOS (works with Xcode)
 --- 
 
 # If you are trying to pass through any other usb device, [use this guide instead](/docs/guide-usb-passthrough)

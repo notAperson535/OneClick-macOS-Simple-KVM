@@ -55,10 +55,6 @@ Once you have set up the bridge and tun/tap on the host, you'll have to add the 
 ```
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
 ```
-You can optionally use the `vmxnet3` driver for higher performance compared to the default e1000. Note that replacing it requires macOS El Capitan or higher.
-```
-    -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
-```
 
 ## Using Netctl
 You can also use netctl and the qemu bridge helper to control the bridge and tun/tap interfaces. Replace `DEVICENAME` with your ethernet card's device name.
