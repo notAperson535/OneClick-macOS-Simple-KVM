@@ -3,7 +3,7 @@ title: Installing macOS
 --- 
 ## Loading the VM
 
-Load up the VM with `sudo ./basic.sh` to start up the VM. for Windows, you would run `sudo HEADLESS=1 ./basic.sh`, then open [VNC Viewer](https://www.realvnc.com/connect/download/viewer/), and connect to `localhost:5900`. 
+Load up the VM with `sudo ./basic.sh` to start up the VM (for Windows, you would run `sudo HEADLESS=1 ./basic.sh`, then open [VNC Viewer](https://www.realvnc.com/connect/download/viewer/), and connect to `localhost:5900`). 
 
 Then select the macOS Installer in OpenCore, and hit enter.
 
@@ -14,6 +14,10 @@ You now must format the disk, otherwise the macOS installer will not be able to 
 ## Installing
 
 Now select the "Reinstall macOS", and open it. Go through the setup screen, and once you get there select the disk you just formatted. Then continue with the setup, it may hang at "Less than a minute remaining" for a while, it's not stuck, just be patient.
+
+![unnamed](https://github.com/notAperson535/OneClick-macOS-Simple-KVM/assets/95918679/f445f47e-ecf1-4e84-ada6-915d7951aa5a)
+
+After it reboots, you must continually select the "macOS Installer" entry in OpenCore to continue installing macOS. Even though it might not look like it's doing anything, it is.
 
 ## Setup Screen (finally)
 
