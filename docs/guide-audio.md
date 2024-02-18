@@ -7,13 +7,10 @@ Original comment here: https://github.com/notAperson535/OneClick-macOS-Simple-KV
 **If you want sound inside your macOS VM, whether with qemu or libvirt/virt-manager :**
 
 1) Disable System Integrity Protection (SIP) : 
-- On boot, select the recovery partition (arrow keys) and press enter to boot into it.
-- Open the Terminal.
-- Run the below command (choose either one) :
-csrutil disable
-or
-csrutil enable --without kext
-- Reboot your VM in macOS.
+- On boot, when you see the OpenCore selection screen, hit the space bar.
+- You should then see an entry that says "toggle SIP", "disable SIP" or something similar
+- Use the keyboard to select it and hit enter
+- Once the process completes, boot as normal.
 
 2) Download latest VoodooHDA kext from here : https://sourceforge.net/projects/voodoohda/
 
