@@ -36,6 +36,7 @@ args=(
     -device ide-hd,bus=sata.3,drive=InstallMedia \
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
     -device ide-hd,bus=sata.4,drive=SystemDisk \
+    -device qemu-xhci -device usb-kbd -device usb-tablet \
     "${MOREARGS[@]}"
 )
 
