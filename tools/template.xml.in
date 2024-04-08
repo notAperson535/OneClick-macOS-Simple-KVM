@@ -7,7 +7,7 @@
   <os>
     <type arch='x86_64' machine='MACHINE'>hvm</type>
     <loader readonly='yes' type='pflash'>VMDIR/firmware/OVMF_CODE.fd</loader>
-    <nvram>VMDIR/firmware/OVMF_VARS-1024x768.fd</nvram>
+    <nvram>VMDIR/firmware/OVMF_VARS.fd</nvram>
     <boot dev='hd'/>
   </os>
   <features>

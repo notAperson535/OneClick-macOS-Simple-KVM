@@ -16,7 +16,7 @@ args=(
     -device isa-applesmc,osk="$OSK" \
     -smbios type=2 \
     -drive if=pflash,format=raw,readonly,file="$OVMF/OVMF_CODE.fd" \
-    -drive if=pflash,format=raw,file="$OVMF/OVMF_VARS-1024x768.fd" \
+    -drive if=pflash,format=raw,file="$OVMF/OVMF_VARS.fd" \
     -vga std \
     -device ich9-intel-hda -device hda-output \
     -usb -device usb-kbd -device usb-mouse \
