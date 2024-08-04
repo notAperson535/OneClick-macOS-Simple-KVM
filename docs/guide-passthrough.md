@@ -2,8 +2,6 @@
 title: Guide to PCIe Passthrough (GPU and Sound)
 --- 
 
-## If you would like to pass through your gpu on windows, please use this guide first: https://mathiashueber.com/passthrough-windows-11-vm-ubuntu-22-04/
-
 ## Enable BIOS features
 To use PCIe Passthrough, you will need a compatible motherboard and CPU with support for iommu. Look up your motherboard manual on how to enable these features, but they are commonly named `VT-d` or `AMD Vi`.
 
