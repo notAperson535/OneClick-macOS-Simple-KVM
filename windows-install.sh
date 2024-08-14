@@ -1,11 +1,20 @@
 #!/bin/bash
-sudo apt update && sudo apt -y upgrade
-sudo apt -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev cpu-checker qemu-kvm aria2 bc
-sudo apt-get install qemu-system qemu-utils python3 python3-pip -y
+
+# Updates and dependencies
+sudo apt -q update && sudo apt -q -y upgrade
+sudo apt -qq -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev cpu-checker aria2 bc qemu-syste>
+
 cd ~
-aria2c -x 10 https://github.com/microsoft/WSL2-Linux-Kernel/archive/linux-msft-wsl-5.15.153.1.tar.gz
-tar -xf WSL2-Linux-Kernel-linux-msft-wsl-5.15.153.1.tar.gz
-cd WSL2-Linux-Kernel-linux-msft-wsl-5.15.153.1/
+
+# Download latest kernel version
+latest=$(curl -s "https://api.github.com/repos/microsoft/WSL2-Linux-Kernel/releases" | jq -r '.[0].name')
+echo "Latest version is $latest"
+aria2c -x 10 --allow-overwrite=true --download-result=hide --summary-interval=0 https://github.com/microsoft/WSL2-Linux>
+
+# Extract and start build process
+pv WSL2-Linux-Kernel-$latest.tar.gz | tar -xz
+cd WSL2-Linux-Kernel-$latest/
 cp Microsoft/config-wsl .config
 make menuconfig
+
 cd ~
