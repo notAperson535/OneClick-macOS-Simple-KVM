@@ -7,7 +7,15 @@ sudo apt -qq -y install build-essential libncurses-dev bison flex libssl-dev lib
 cd ~
 
 # Download latest kernel version
-latest=$(curl -s "https://api.github.com/repos/microsoft/WSL2-Linux-Kernel/releases" | jq -r '.[0].name')
+if ! latest=$(curl -s "https://api.github.com/repos/microsoft/WSL2-Linux-Kernel/releases" | jq -r '.[0].name'); then
+    echo "Error: Failed to fetch latest version from GitHub API"
+    exit 1
+fi
+
+if [ -z "$latest" ]; then
+    echo "Error: Failed to parse version information"
+    exit 1
+fi
 echo "Latest version is $latest"
 aria2c -x 10 --allow-overwrite=true --download-result=hide --summary-interval=0 https://github.com/microsoft/WSL2-Linux>
 
