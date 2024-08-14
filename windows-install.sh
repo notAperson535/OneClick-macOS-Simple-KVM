@@ -17,6 +17,11 @@ if [ -z "$latest" ]; then
     exit 1
 fi
 echo "Latest version is $latest"
+if [ -z "$latest" ]; then
+    echo "Failed to fetch latest version. Using fallback version."
+    latest="5.10.102.1"
+fi
+echo "Using kernel version: $latest"
 aria2c -x 10 --allow-overwrite=true --download-result=hide --summary-interval=0 https://github.com/microsoft/WSL2-Linux>
 
 # Extract and start build process
