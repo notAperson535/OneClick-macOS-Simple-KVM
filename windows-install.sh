@@ -25,7 +25,11 @@ echo "Using kernel version: $latest"
 aria2c -x 10 --allow-overwrite=true --download-result=hide --summary-interval=0 https://github.com/microsoft/WSL2-Linux>
 
 # Extract and start build process
-pv WSL2-Linux-Kernel-$latest.tar.gz | tar -xz
+if command -v pv >/dev/null 2>&1; then
+    pv WSL2-Linux-Kernel-$latest.tar.gz | tar -xz
+else
+    tar -xzvf WSL2-Linux-Kernel-$latest.tar.gz
+fi
 cd WSL2-Linux-Kernel-$latest/
 cp Microsoft/config-wsl .config
 make menuconfig
