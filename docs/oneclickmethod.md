@@ -2,6 +2,12 @@
 title: OneClick Method
 ---
 
+
+First, clone the repo
+```
+git clone https://github.com/notAperson535/OneClick-macOS-Simple-KVM.git
+```
+
 - `setup.sh` is for Debian based Linux Repositories like Ubuntu
 - `setupArch.sh` is for Arch based Linux Repositories like Manjaro.
 - `setupFedora.sh` is for Fedora based Linux Repositories.

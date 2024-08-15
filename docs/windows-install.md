@@ -53,17 +53,15 @@ cat /sys/module/kvm_intel/parameters/nested
 ```
 If the first command returns `KVM acceleration can be used` and the second command returns `Y`, then you are good to go. If the first command returns `Y` but the second command return something like `no`, than go to the bottom of the page for troubleshooting.
 
-Now cd into the OneClick-macOS-Simple-KVM directory, replacing the WINDOWS_USER_NAME with the your Windows username, not the Linux one.
+Now make sure you are still in the OneClick-macOS-Simple-KVM directory, the path should look something like this:
 ```
-cd /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
+/mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 And run `./setup.sh` to finish the setup and run the macOS VM!
 
-~~(Note that the max OS you can run is Big Sur, because of some TSC restrictions. I am working on this issue and when it is resolved I will post a message in the [Discord Server](https://discord.gg/XaEdCSPyNa).)~~
+~~(Note that the max OS you can run is Big Sur, because of some TSC restrictions. I am working on this issue and when it is resolved I will post a message in the [Discord Server](https://discord.gg/XaEdCSPyNa).)~~ This now fixed and you can run Monterey and up on Windows
 
-This now fixed and you can run Monterey and up on Windows
-
-Once setup.sh finsishes , press ctrl+c and run `sudo HEADLESS=1 ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+Once setup.sh finsishes and you see a QEMU window pop up, press ctrl+c and run `sudo HEADLESS=1 ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
 
 Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh`.
 

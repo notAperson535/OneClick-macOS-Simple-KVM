@@ -18,6 +18,11 @@ To use in NIXOS add qemu, pyton3, and python3-pip to your packages list.
 
 If you are installing on Solus OS, extracting qemu may take a while, so be patient.
 
+First, clone the repo
+```
+git clone https://github.com/notAperson535/OneClick-macOS-Simple-KVM.git
+```
+
 ## Step 1
 Run `fetch-macOS-v2.py` to download installation media for macOS (internet required).
 ```
