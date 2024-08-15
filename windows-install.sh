@@ -2,7 +2,7 @@
 
 # Updates and dependencies
 sudo apt -q update && sudo apt -q -y upgrade
-sudo apt -qq -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev cpu-checker aria2 bc qemu-syste>
+sudo apt -q -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev cpu-checker aria2 bc qemu-system
 
 cd ~
 
@@ -22,7 +22,7 @@ if [ -z "$latest" ]; then
     latest="5.10.102.1"
 fi
 echo "Using kernel version: $latest"
-aria2c -x 10 --allow-overwrite=true --download-result=hide --summary-interval=0 https://github.com/microsoft/WSL2-Linux>
+aria2c -x 10 --allow-overwrite=true --download-result=hide --summary-interval=0 https://github.com/microsoft/WSL2-Linux-Kernel/archive/$latest.tar.gz
 
 # Extract and start build process
 if command -v pv >/dev/null 2>&1; then
