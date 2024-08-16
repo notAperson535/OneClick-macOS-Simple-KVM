@@ -51,7 +51,7 @@ Now run these commands to make sure virtualization works
 kvm-ok
 cat /sys/module/kvm_intel/parameters/nested
 ```
-If the first command returns `KVM acceleration can be used` and the second command returns `Y`, then you are good to go. If the first command returns `Y` but the second command return something like `no`, than go to the bottom of the page for troubleshooting.
+If the first command returns `KVM acceleration can be used` and the second command returns `Y`, then you are good to go. If the first command returns `Y` but the second command return something like `no`, then go to the bottom of the page for troubleshooting.
 
 Now make sure you are still in the OneClick-macOS-Simple-KVM directory, the path should look something like this:
 ```
@@ -83,3 +83,7 @@ debugConsole=true
 pageReporting=true
 kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 kvm-intel.ept=1 kvm-intel.emulate_invalid_guest_state=0 kvm-intel.enable_shadow_vmcs=1 kvm-intel.enable_apicv=1
 ```
+
+### Getting `Your CPU does not support KVM extensions` on AMD processors
+
+For those with AMD EPYC/Ryzen processor or later, Nested Virtualization (required for KVM) [is not supported on Windows 10](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enable-nested-virtualization#amd-epyc--ryzen-processor-or-later). So you have to upgrade to Windows 11.
