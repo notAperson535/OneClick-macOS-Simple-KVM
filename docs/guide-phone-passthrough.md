@@ -33,13 +33,18 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="*",GROUP="users",
 
 Next, comment out all the lines in `/etc/udev/rules.d/39-usbmuxd.rules`. If the file is empty, that is fine.
 
-Now, run this command as root
+For some people disabling gvfs-gphoto2 also helps this work.
+```
+sudo chmod 0000 /usr/lib/systemd/user/gvfs-gphoto2-volume-monitor.service
+sudo kill $(ps -A | grep gvfs.*gphoto.* | awk '{print $1}')
+```
+
+Next, reload the udev rules
 ```
 sudo udevadm control -R
 ```
 
-Then edit your `basic.sh` file and add these lines
-
+Then add these lines to `basic.sh`
 ```
 -usb \
 -device usb-ehci,id=ehci \
@@ -48,7 +53,7 @@ Then edit your `basic.sh` file and add these lines
 
 This is another instance where you need to input the vendor and product ids. In this case they are `05ac` and `12a8` respectively.
 
-Now when you connect your phone you will see a "Trust this computer message. You must trust the computer to be able to access specific iPhone features and have it appear in Xcode.
+When you connect your phone and unlock it you will see a "Trust this computer" message. You must trust the computer to be able to access specific iPhone features and have it appear in Xcode.
 
 ## Pairing the iOS device to Xcode
 * Open Xcode and go to `Window  Devices and Simulators`.
