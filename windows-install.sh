@@ -8,4 +8,3 @@ tar -xf WSL2-Linux-Kernel-linux-msft-wsl-5.15.153.1.tar.gz
 cd WSL2-Linux-Kernel-linux-msft-wsl-5.15.153.1/
 cp Microsoft/config-wsl .config
 make menuconfig
-cd ~
