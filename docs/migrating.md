@@ -12,7 +12,7 @@ You are technically done now, but you can follow the macOS parts of [this guide]
 
 ### Coming from OSX-KVM
 
-If you want to come from OSX-KVM, maybe for stability, it will be a little harder and take a little longer. First, place the BaseSystem file and the file that has macOS installed into the OneClick-macOS-Simple-KVM folder. Then, rename the file that has macOS installed (usually mac_hdd_ng.img) to macOS.img. Then run this command.
+If you want to come from OSX-KVM, maybe for stability, There is one extra step. First, place the BaseSystem file and the file that has macOS installed into the OneClick-macOS-Simple-KVM folder. Then, rename the file that has macOS installed (usually mac_hdd_ng.img) to macOS.img. Then run this command.
 ```
 qemu-img convert -f qcow2 -O qcow2 macOS.img macOS.qcow2
 ```
