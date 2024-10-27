@@ -17,7 +17,8 @@ args=(
     -enable-kvm \
     -m 4G \
     -machine q35,accel=kvm \
-    -smp 4,cores=2 \
+    -smp cores=2,threads=2,sockets=1 \
+    # A single CPU with two cores, with each core having two threads (4 threads total)
     -cpu Haswell-noTSX,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc,+avx2 \
     -device isa-applesmc,osk="$OSK" \
     -smbios type=2 \
