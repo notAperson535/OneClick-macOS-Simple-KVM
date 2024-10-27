@@ -11,7 +11,7 @@ args=(
     -enable-kvm \
     -m 4G \
     -machine q35,accel=kvm \
-    -smp 4,cores=2 \
+    -smp cores=2,threads=2,sockets=1 \
     -cpu Penryn,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc \
     -device isa-applesmc,osk="$OSK" \
     -smbios type=2 \
