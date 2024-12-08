@@ -1,25 +1,22 @@
 ---
 title: Guide to Performance Tuning (Adding Memory and CPU cores)
 --- 
-The default macOS VM configuration (`basic.sh`) assumes some sane defaults, however this may not reflect the actual topology or peformance capabilities of the underlaying machine.
+The default macOS VM configuration (`basic.sh`) assumes some sane defaults, however this may not reflect the actual peformance capabilities of the host machine.
 
-Here's some tunable parameters to get the most of out QEMU:
+Here are some attributes you can change to get the best performance out of your VM:
 
 ## Memory
-The following line controls memory allocation. The default is 2GB of RAM.
+The following line controls memory allocation. The default is 4GB of RAM.
 
 Increase this as needed (limited to the real amount of memory in your machine).
 ```
-    -m 2G \
+-m 4G \
 ```
 
 ## Cores
-The default configuration enables 4 threads, divided into CPUs with 2 cores each.
+The default configuration is 1 CPU with 2 cores, and each core containing 2 threads (4 threads in total).
 ```
-    -smp 4,cores=2 \
+-smp cores=2,threads=2,sockets=1 \
 ```
-
-The following example describes all possible topology flags:
-```
-    -smp cores=4,threads=4,sockets=1 \
-```
+### Warning
+macOS is very picky about core/thread configs. If you change the config and get stuck on the Apple logo, go back and try another config. You could also reference CPU configs of real Mac Intel processors.
