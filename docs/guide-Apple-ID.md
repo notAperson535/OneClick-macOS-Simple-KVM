@@ -24,6 +24,6 @@ title: Apple-ID fixing
 
 5. You can edit it by hand or use [ProperTree](https://github.com/corpnewt/ProperTree) for this.
 6. Reboot.
-    - *Sequoia only*: In this version, it seems macOS detects the VM and "blocks" the apple ID. To trick macOS the default opencore config disables the flag "hv_vmm_present" (WILL BE IMPLEMENTED SOON *written on 12/12/2024*).
+    - *Sequoia only*: In this version, it seems macOS detects the VM and "blocks" the apple ID. To trick macOS the default opencore config disables the flag "hv_vmm_present".
     - Due to this, make sure the flag `hv_vmm_present` set to 0 by runnning the command `sysctl kern | grep 'kern.hv_vmm_present'`. If it is not, try [updating your local repo](/docs/start-here#important), and if this still does not work, open an issue or join the [discord server](https://discord.gg/XaEdCSPyNa).
 7. You should be able to log in with your Apple ID now.
