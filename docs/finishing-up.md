@@ -9,12 +9,12 @@ Once macOS is succesfully installed, you can select the macOS partition on the b
 ## Changing VM settings
 
 Here are some guides on how to change the VM settings to best fit your needs:
-* [add memory and change cpu core counts](/docs/guide-performance)
-* set up [bridged networking](/docs/guide-networking)
-* add [passthrough hardware (for GPUs and Sound Cards)](/docs/guide-passthrough), 
-* or [use sound without a sound card](/docs/guide-audio)
-* [tweak the screen resolution](/docs/guide-screen-resolution)
-* [turn off verbose](/docs/guide-disabling-verbose)
+* [Add memory and change cpu core counts](/docs/guide-performance)
+* Set up [bridged networking](/docs/guide-networking)
+* Add [passthrough hardware (for GPUs and Sound Cards)](/docs/guide-passthrough), 
+* [Use sound without a sound card](/docs/guide-audio)
+* [Tweak the screen resolution](/docs/guide-screen-resolution)
+* [Turn off verbose](/docs/guide-disabling-verbose)
 
 ## Optimizing
 
