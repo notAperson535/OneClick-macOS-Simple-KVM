@@ -1,5 +1,5 @@
 <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
-  <name>macOS-Simple-KVM</name>
+  <name>OneClick-macOS-Simple-KVM</name>
   <uuid>d06d502a-904a-4b34-847d-debf1a3d76c7</uuid>
   <memory unit='KiB'>2097152</memory>
   <currentMemory unit='KiB'>2097152</currentMemory>
