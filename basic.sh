@@ -26,7 +26,7 @@ args=(
     -drive if=pflash,format=raw,readonly=on,file="$OVMF/OVMF_CODE.fd" \
     -drive if=pflash,format=raw,file="$OVMF/OVMF_VARS.fd" \
     -vga qxl \
-    -usb -device qemu-xhci -device usb-kbd -device usb-tablet \
+    -usb -device usb-ehci,id=ehci -device usb-kbd,bus=ehci.0 -device usb-tablet,bus=ehci.0 \
     -netdev user,id=net0 \
     -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
     -monitor telnet:127.0.0.1:5801,server,nowait \
