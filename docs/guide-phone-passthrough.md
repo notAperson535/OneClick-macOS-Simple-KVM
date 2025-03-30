@@ -44,10 +44,8 @@ Next, reload the udev rules
 sudo udevadm control -R
 ```
 
-Then add these lines to `basic.sh`
+Then add this line to `basic.sh`
 ```
--usb \
--device usb-ehci,id=ehci \
 -device usb-host,bus=ehci.0,vendorid=0x05ac,productid=0x12a8,guest-reset=false,id=iphone \
 ```
 
