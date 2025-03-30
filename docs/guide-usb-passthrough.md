@@ -1,6 +1,8 @@
 ---
-title: Passing through a USB device (Works with iPhone)
+title: Passing through a USB device
 --- 
+
+# If you are looking to pass through your iPhone, [use this guide instead](/docs/guide-phone-passthrough)
 
 If you are on Windows using the WSL method make sure to pass through the usb device to wsl first by following [this guide](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
 
@@ -19,5 +21,3 @@ Now, add this line to the `args` section of `basic.sh`, replacing the `hostbus` 
 ```-usb -device usb-host,hostbus=2,hostaddr=3 \```
 
 Thats it! You should be good to go.
-
-# If this guide did not work for an iPhone, [try this one instead](/docs/guide-phone-passthrough)
