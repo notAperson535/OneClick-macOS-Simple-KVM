@@ -29,6 +29,9 @@ This can be done by selecting the "vision" section when you reach the accessibil
 #### DO NOT LOG IN TO YOUR APPLE ID ON THE SETUP SCREEN
 This will blacklist your account and you will need to contact support. Before logging into any apple account you MUST follow [this guide](/docs/guide-Apple-ID)
 
+#### Do not turn on FileVault
+This will cause issues with the Virtual Machine
+
 ##### A reboot is always reccomended after you are done installing.
 
 ## [Now head over to Finishing Up to see how to set up the VM to be faster and have more features like sound and display acceleration](/docs/finishing-up)
