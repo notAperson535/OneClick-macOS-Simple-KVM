@@ -21,11 +21,16 @@ After it reboots, you must continually select the "macOS Installer" entry in Ope
 
 ## Setup Screen (finally)
 
-Once you get to the setup screen, you will probably notice that it is very laggy, this is ok, as it will get much faster once you get through it. A reboot is always reccomended after you are done installing.
+Once you get to the setup screen, you will probably notice that it is very laggy, this is ok, as it will get much faster once you get through it. 
 
-### DO NOT LOG IN TO YOUR APPLE ID ON THE SETUP SCREEN
+#### A good way to make this experience better is by disabling transparency effects
+This can be done by selecting the "vision" section when you reach the accessibility setup screen. Once selected go through the different settings until reaching "Reduce Transparency", and turn it off. Reduce motion is recommended as well.
+
+#### DO NOT LOG IN TO YOUR APPLE ID ON THE SETUP SCREEN
 This will blacklist your account and you will need to contact support. Before logging into any apple account you MUST follow [this guide](/docs/guide-Apple-ID)
+
+##### A reboot is always reccomended after you are done installing.
 
 ## [Now head over to Finishing Up to see how to set up the VM to be faster and have more features like sound and display acceleration](/docs/finishing-up)
 
-(Don't skip this)
+(Do not skip this)
