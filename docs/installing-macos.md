@@ -13,11 +13,13 @@ You now must format the disk, otherwise the macOS installer will not be able to 
 
 ## Installing
 
-Now select the "Reinstall macOS", and open it. Go through the setup screen, and once you get there select the disk you just formatted. Then continue with the setup, it may hang at "Less than a minute remaining" for a while, it's not stuck, just be patient.
+Now select the "Reinstall macOS", and open it. Go through the setup screen, and once you get there select the disk you just formatted. Then continue with the setup.
 
 ![unnamed](https://github.com/notAperson535/OneClick-macOS-Simple-KVM/assets/95918679/f445f47e-ecf1-4e84-ada6-915d7951aa5a)
 
 After it reboots, you must continually select the "macOS Installer" entry in OpenCore to continue installing macOS. It will take multiple reboots to fully install the OS.
+
+### If the process gets stuck for a prolonged period of time at any point (for example at "Less than a minute remaining...") do not worry as this is normal. The setup eta is not accurate. Some users prefer to install it overnight for this reason.
 
 ## Setup Screen (finally)
 
