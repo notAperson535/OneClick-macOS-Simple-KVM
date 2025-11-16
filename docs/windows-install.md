@@ -18,7 +18,7 @@ After rebooting, run
 ```
 wsl --install Ubuntu-22-04
 ```
-One that is done, pick a username and password. It does not have to be the same as the system.
+Once that is done, pick a username and password. It does not have to be the same as the system.
 
 ## Step 2 (Getting the files)
 Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with your Windows username, not the Linux one.
