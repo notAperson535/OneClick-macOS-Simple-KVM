@@ -13,18 +13,17 @@ Open Powershell as an administrator and run this command
 ```
 wsl --install
 ```
-It will prompt a reboot, reboot and let it install Ubuntu. One that is done, make a username and password. It does not have to be the same as the system.
-
-If you do not see the window for Ubuntu
+Once it finishes installing, restart your computer.
+After rebooting, run
+```
+wsl --install Ubuntu-22-04
+```
+One that is done, pick a username and password. It does not have to be the same as the system.
 
 ## Step 2 (Getting the files)
-Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with the your Windows username, not the Linux one.
+Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with your Windows username, not the Linux one.
 ```
 cd /mnt/c/users/WINDOWS_USER_NAME/Documents
-```
-Then run
-```
-sudo apt install git-all -y
 ```
 Now clone the repository
 ```
