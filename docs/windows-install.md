@@ -13,18 +13,19 @@ Open Powershell as an administrator and run this command
 ```
 wsl --install
 ```
-It will prompt a reboot, reboot and let it install Ubuntu. One that is done, make a username and password. It does not have to be the same as the system.
+Once it finishes installing, restart your computer.
+After rebooting, you'll need to check if this command automatically installed Ubuntu.
+Run `wsl -l -v`. If that outputs something related to Ubuntu, you are good to go. If not, install Ubuntu with this command:
+```
+wsl --install Ubuntu
+```
 
-If you do not see the window for Ubuntu
+Once that is done, pick a username and password inside the WSL terminal that pops up. It does not have to be the same as the system.
 
 ## Step 2 (Getting the files)
-Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with the your Windows username, not the Linux one.
+Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with your Windows username, not the Linux one.
 ```
 cd /mnt/c/users/WINDOWS_USER_NAME/Documents
-```
-Then run
-```
-sudo apt install git-all -y
 ```
 Now clone the repository
 ```
@@ -57,11 +58,14 @@ Now make sure you are still in the OneClick-macOS-Simple-KVM directory, the path
 ```
 /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
-Next run `./setup.sh` to finish the setup and run the macOS VM!
 
-Once setup.sh finsishes and you see a QEMU window pop up, press ctrl+c and run `sudo HEADLESS=1 ./basic.sh`. Once this is done, download VNC Viewer, [here](https://www.realvnc.com/en/connect/download/viewer/), then type `localhost:5900` into the top to connect to the vm using vnc.
+Before running `setup.sh` and installing macOS, you will need to follow a few steps first to get the best performance out of the VM. First, download VNC Viewer [here](https://www.realvnc.com/en/connect/download/viewer/).
 
-Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh`.
+Next run `./setup.sh`.
+
+Once you see a QEMU window pop up, press ctrl+c in the termina; and run `sudo HEADLESS=1 ./basic.sh`. This will start the VM in "headless" mode, which puts the output of the display onto a local port. Open VNC Viewer, and go to `localhost:5900` to connect to the VM using VNC.
+
+Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh` or `./basic.sh`.
 
 ## You're done!
 
