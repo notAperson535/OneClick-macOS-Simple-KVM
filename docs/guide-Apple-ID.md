@@ -2,7 +2,7 @@
 title: Apple-ID fixing
 ---
 
-## Prerequisites (these are installed on the VM):
+## Prerequisites (you should install these on the VM):
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 - [ProperTree](https://github.com/corpnewt/ProperTree)
 
