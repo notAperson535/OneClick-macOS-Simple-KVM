@@ -70,7 +70,7 @@ Before running `setup.sh` and installing macOS, you will need to follow a few st
 
 Next run `./setup.sh`.
 
-Once you see a QEMU window pop up, press ctrl+c in the termina; and run `sudo HEADLESS=1 ./basic.sh`. This will start the VM in "headless" mode, which puts the output of the display onto a local port. Open VNC Viewer, and go to `localhost:5900` to connect to the VM using VNC.
+Once you see a QEMU window pop up, press ctrl+c in the terminal and run `sudo HEADLESS=1 ./basic.sh`. This will start the VM in "headless" mode, which puts the output of the display onto a local port. Open VNC Viewer, and go to `localhost:5900` to connect to the VM using VNC.
 
 Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh` or `./basic.sh`.
 
