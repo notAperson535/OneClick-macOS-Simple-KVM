@@ -36,25 +36,32 @@ Now cd into the newly created folder
 cd OneClick-macOS-Simple-KVM
 ```
 
-## Step 3 (installing qemu and virtualization capabilities)
-Run the included windows installer
-```
-./windows-install.sh
-```
-Once you get to the menu (looks like this)
-![image](https://user-images.githubusercontent.com/95918679/152704969-29fccfab-de68-4977-b2c7-4fb5b4b5c3cb.png)
-Go to Virtualization and make sure your system processor type is selected, mine is Intel
-![image](https://user-images.githubusercontent.com/95918679/152704984-213b067b-1a8e-45cf-ad23-330391c31583.png)
-Then keep clicking exit, and save the configuration
+## Step 3 (installing QEMU and more)
 
-Now run these commands to make sure virtualization works
+First, install the `cpu-checker` package:
+```
+sudo apt install cpu-checker
+```
+
+Now run this commands to make sure virtualization works:
 ```
 kvm-ok
+```
+This should output `Y`. If it does not, check your BIOS configuration to make sure nested virtualization is on (search up online based on which CPU you have).
+
+Next, for Intel CPUs run:
+```
 cat /sys/module/kvm_intel/parameters/nested
 ```
-If the first command returns `KVM acceleration can be used` and the second command returns `Y`, then you are good to go. If the first command returns `Y` but the second command return something like `no`, then go to the bottom of the page for troubleshooting.
 
-Now make sure you are still in the OneClick-macOS-Simple-KVM directory, the path should look something like this:
+Or for AMD CPUs run:
+```
+cat /sys/module/kvm_amd/parameters/nested
+```
+
+If that command returns `Y` or `1` (depending on CPU type), then you are good to go. If it returns something like `N`, then go to the bottom of the page for troubleshooting.
+
+Now make sure you are still in the OneClick-macOS-Simple-KVM directory. The path should look something like this:
 ```
 /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
@@ -88,4 +95,4 @@ kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 k
 
 ### Getting `Your CPU does not support KVM extensions` on AMD processors
 
-For those with AMD EPYC/Ryzen processor or later, Nested Virtualization (required for KVM) [is not supported on Windows 10](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enable-nested-virtualization#amd-epyc--ryzen-processor-or-later). So you have to upgrade to Windows 11.
+For those with AMD EPYC/Ryzen processor or later, Nested Virtualization (required for KVM) [is not supported on Windows 10](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enable-nested-virtualization#amd-epyc--ryzen-processor-or-later). You will have to upgrade to Windows 11.
