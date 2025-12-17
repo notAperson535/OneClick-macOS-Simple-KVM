@@ -15,7 +15,7 @@ title: Apple-ID fixing
     - Type `sudo diskutil mount diskYsZ`, using the disk/partition location name where you see EFI. It should look like this:
  ![image](https://oneclick-macos-simple-kvm.notaperson535.is-a.dev/img/efi%20partition.png)
 
-For the next steps there is a [video guide here](https://www.youtube.com/watch?v=vBRrCYZEjtI) (timestamp 1:00 - 3:35, use SMBIOS iMacPro1,1).
+For the next steps there is a [video guide here](https://www.youtube.com/watch?v=vBRrCYZEjtI) (timestamp 1:00 - 3:35, use SMBIOS MacPro7,1).
 
 3. Run `genSMBIOS.command` and generate a set of serials (option 3) for the mac model shown under "System Report" (should be iMacPro1,1).
 4. Locate the plist file at `/Volumes/EFI/OC/config.plist`. Insert the generated serials into generic section in the appropriate places. The options for the `config.plist` should be under `PlatformInfo > Generic` in ProperTree.
