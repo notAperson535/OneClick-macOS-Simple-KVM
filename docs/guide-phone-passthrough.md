@@ -23,7 +23,7 @@ To create 97-iphone-rules, first run this command:
 sudo nano /etc/udev/rules.d/97-iphone.rules
 ```
 
-Now add this to the new file in nano
+Now add this line to the new file
 
 ```
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="*",GROUP="users", MODE="0660"
@@ -32,6 +32,12 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="*",GROUP="users",
 `05ac` is the vendor ID from earlier. This specific vendor ID is used on nearly all iPhones.
 
 Next, comment out all the lines in `/etc/udev/rules.d/39-usbmuxd.rules`. If the file is empty, that is fine.
+
+Next, disable and mask `usbmuxd` (it can be re-enabled later if you ever need it):
+```
+sudo systemctl disable --now usbmuxd.service
+sudo systemctl mask usbmuxd.service
+```
 
 For some people disabling gvfs-gphoto2 also helps this work.
 ```
