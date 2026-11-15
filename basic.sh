@@ -32,7 +32,7 @@ args=(
     -monitor telnet:127.0.0.1:5801,server,nowait \
     -device ich9-ahci,id=sata \
     -drive id=OpenCore,if=none,format=qcow2,file="$VMDIR/OpenCore.qcow2" \
-    -device ide-hd,bus=sata.2,drive=OpenCore \
+    -device ide-hd,bus=sata.2,drive=OpenCore,bootindex=1 \
     -drive id=InstallMedia,format=raw,if=none,file="$VMDIR/BaseSystem.img" \
     -device ide-hd,bus=sata.3,drive=InstallMedia \
     -drive id=SystemDisk,if=none,file="$VMDIR/macOS.qcow2" \
